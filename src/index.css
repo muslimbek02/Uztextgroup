@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Teko:wght@300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -7,6 +7,7 @@
 body{
   font-family: 'Roboto', sans-serif;
   overflow-x: visible;
+  scroll-behavior: smooth;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -33,4 +34,42 @@ ul {
 }
 a {
   text-decoration: none;
+}
+
+/*----------- container style start ------------ */
+
+.container {
+  padding: 0 170px;
+}
+@media only screen and (max-width: 1200px){
+  .container {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .container {
+    padding: 0 70px;
+  }
+}
+
+@media only screen and (max-width: 805px){
+  .container {
+    padding: 0 50px;
+  }
+}
+
+/*----------- container style end --------------- */
+
+
+.heading-text {
+  font-size: 16px;
+  line-height: 1.125;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #f14201;
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  padding: 4px 6px 1px;
 }

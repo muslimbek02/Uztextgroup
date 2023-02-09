@@ -209,26 +209,35 @@
 .phone-menu {
   position: fixed;
   top: 0;
+  right: 0;
   z-index: 1000000;
   width: 100%;
   height: 100vh;
   background-color: #fff;
-  padding-top: 100px;
+  padding-top: 70px;
   transform: translateX(100%);
-  transition: .4s linear;
+  transition: transform .3s linear;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 .phone-menu-link {
   display: block;
   padding: 12px 20px;
   text-align: center;
-  margin-top: 10px;
-  color: #f24a00;
+  margin-top: 30px;
+  color: #222;
   font-weight: 500;
 }
 .phone-menu-link:hover {
-  background-color: #f24a00;
-  color: #fff;
+  color: #f24a00;
+}
+.menu-panel-bottom{
+  margin-top: auto;
+  padding-bottom: 60px;
+}
+.menu-panel-bottom p{
+  padding: 0 30px;
 }
 .menu-close-btn {
   position: absolute;

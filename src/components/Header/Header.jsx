@@ -6,6 +6,8 @@ import { useState } from 'react';
 const Header = ({ isVisible }) => {
 
   const [isMobile, setIsMobile] = useState(false);
+  
+  document.body.style.overflow = isMobile ? 'hidden' : '';
 
   return (
     <>
@@ -23,9 +25,9 @@ const Header = ({ isVisible }) => {
               </Link>
             </li>
             <li className='nvbar-item nvbar-dropdown'>
-              <Link to='/' className='nvbar-link'>
+              <a href='#about' className='nvbar-link'>
                 KOMPANIYA HAQIDA
-              </Link>
+              </a>
               <ul className="dropdown-list">
                 <li>
                   <Link to='/'>Mahsulotlar</Link>
@@ -79,20 +81,20 @@ const Header = ({ isVisible }) => {
             </Link>
 
             <div className='menu-bar'>
-              <button className='header-menu-btn' onClick={()=> setIsMobile(true)}>
+              <button className='header-menu-btn' onClick={() => setIsMobile(true)}>
                 <span className='header-menu-btn-inner'></span>
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div className='phone-menu' style={{transform: isMobile && `translateX(0)`}}>
+      <div className='phone-menu' style={{ transform: isMobile && `translateX(0)` }}>
         <ul className='phone-menu-list'>
           <li>
             <Link className='phone-menu-link' to='/'>Asosiy</Link>
           </li>
           <li>
-            <a className='phone-menu-link' href='/'>Kompaniya haqida</a>
+            <a className='phone-menu-link' href='#about'>Kompaniya haqida</a>
           </li>
           <li>
             <Link className='phone-menu-link' to='/'>Yangiliklar</Link>
@@ -101,12 +103,17 @@ const Header = ({ isVisible }) => {
             <a className='phone-menu-link' href='/'>Aloqa</a>
           </li>
         </ul>
-        <button 
+        <button
           className='menu-close-btn'
-          onClick={()=> setIsMobile(false)}  
+          onClick={() => setIsMobile(false)}
         >
-          <AiOutlineClose style={{width: '30px', height: '30px'}} />
+          <AiOutlineClose style={{ width: '30px', height: '30px' }} />
         </button>
+        <div className="menu-panel-bottom">
+          <p>© 2009-2022 <b>UZTEX GROUP</b>. All
+            Rights Reserved. Design by <b>md.uz</b>
+          </p>
+        </div>
       </div>
     </>
   )
