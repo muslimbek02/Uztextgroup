@@ -30,7 +30,7 @@ const Header = ({ isVisible }) => {
               </a>
               <ul className="dropdown-list">
                 <li>
-                  <Link to='/'>Mahsulotlar</Link>
+                  <a href='#products'>Mahsulotlar</a>
                 </li>
                 <li>
                   <Link to='/'>Texnologiyalar</Link>

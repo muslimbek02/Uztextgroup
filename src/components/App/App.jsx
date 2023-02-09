@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import VideoBox from "../VideoBox/VideoBox";
 import AboutBox from "../AboutBox/AboutBox";
 import PerNumbers from "../PerNumbers/PerNumbers";
+import ProductsSlider from "../ProductsSlider/ProductsSlider";
 
 const App = () => {
   const [offset, setOffset] = useState(false);
@@ -27,6 +28,7 @@ const App = () => {
       <VideoBox offset={offset} isVisible={isVisible} />
       <AboutBox />
       <PerNumbers />
+      <ProductsSlider />
     </BrowserRouter>
   )
 }

@@ -1,10 +1,10 @@
 import './PerNumbers.css'
-import { perNumbers } from './perNumberArr'
+import { perNumbers } from '../../data'
 const PerNumbers = () => {
   return (
     <div className='per-numbers'>
       <div className="container">
-        <h1 class="per-numbers-title">Yillik ishlab chiqarish quvvati</h1>
+        <h1 className="per-numbers-title">Yillik ishlab chiqarish quvvati</h1>
         <div className="per-numbers-inner">
           {
             perNumbers.map((item) => (
