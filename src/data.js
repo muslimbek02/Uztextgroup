@@ -63,3 +63,22 @@ export const productsArr = [
     img: 'slider-ip.jpg'
   },
 ]
+
+export const technologies = [
+  {
+    id: 1,
+    title: 'Iplarni bo\'yash texnologiyasi',
+  },
+  {
+    id: 2,
+    title: 'Matolarni bo\'yash texnologiyasi',
+  },
+  {
+    id: 3,
+    title: 'Aylanma bosib chiqarish texnologiyasi',
+  },
+  {
+    id: 4,
+    title: 'Tayyor mahsulotlarni tikish',
+  },
+]
