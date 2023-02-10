@@ -33,7 +33,7 @@ const Header = ({ isVisible }) => {
                   <a href='#products'>Mahsulotlar</a>
                 </li>
                 <li>
-                  <Link to='/'>Texnologiyalar</Link>
+                  <a href='#technologies'>Texnologiyalar</a>
                 </li>
                 <li>
                   <Link to='/'>Sifat</Link>

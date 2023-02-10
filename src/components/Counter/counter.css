@@ -1,0 +1,68 @@
+.counter-wrapper {
+  margin: 150px 0;
+}
+.counter-items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.counter-item {
+  flex: 0 0 33.3%;
+  max-width: 33.3%;
+  display: flex;
+}
+.counter-item .counter-item-value {
+  font-size: 72px;
+  line-height: 1;
+  font-family: 'Teko', Helvetica, sans-serif;
+  position: relative;
+  margin-right: 30px;
+}
+.counter-item .counter-item-text{
+  padding-top: 11px;
+  font-size: 20px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #666;
+  padding-right: 30px;
+}
+
+
+/*------------- Counter media query start ------------- */
+
+@media only screen and (max-width: 1100px){
+  .counter-wrapper {
+    margin: 100px 0;
+  }
+  .counter-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 800px){
+  .counter-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .counter-item .counter-item-text{
+    padding-left: 70px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .counter-item .counter-item-text{
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 520px){
+  .counter-wrapper {
+    margin-top: 70px;
+  }
+  .counter-item .counter-item-text{
+    padding-left: 20px;
+  }
+}
+
+
+/*------------- Counter media query end ------------- */

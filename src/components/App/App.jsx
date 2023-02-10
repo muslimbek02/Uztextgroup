@@ -6,6 +6,11 @@ import AboutBox from "../AboutBox/AboutBox";
 import PerNumbers from "../PerNumbers/PerNumbers";
 import ProductsSlider from "../ProductsSlider/ProductsSlider";
 import Technologies from "../Technologies/Technologies";
+import Counter from "../Counter/Counter";
+import Partners from "../Partners/Partners";
+import News from "../News/News";
+import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
 
 const App = () => {
   const [offset, setOffset] = useState(false);
@@ -31,6 +36,11 @@ const App = () => {
       <PerNumbers />
       <ProductsSlider />
       <Technologies />
+      <Counter />
+      <Partners />
+      <News />
+      {/* <Contact /> */}
+      <Footer />
     </BrowserRouter>
   )
 }

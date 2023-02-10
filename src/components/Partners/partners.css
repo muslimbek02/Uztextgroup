@@ -1,0 +1,58 @@
+.clients{
+  width: 100%;
+  padding: 100px 0;
+  margin-top: 50px;
+  background-image: url(./dot-gray.jpg);
+}
+.partners {
+  display: flex;
+  align-items: center;
+}
+.partners .img-box {
+  position: relative;
+  margin-right: 50px;
+}
+
+.partners .img-box:last-child {
+  margin-right: 0;
+}
+.partners .img-box img{
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 992px){
+  .partners .img-box{
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .clients{
+    padding: 70px 0;
+  }
+  .partners {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .partners .img-box{
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    margin-right: 0;
+  }
+  .partners .img-box:first-child{
+    margin-top: 0;
+  }
+  .partners .img-box img{
+    max-width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .clients{
+    padding: 40px 0;
+  }
+  .partners .img-box img{
+    max-width: 60%;
+  }
+}
