@@ -11,7 +11,7 @@ const Header = ({ isVisible }) => {
 
   return (
     <>
-      <div className={`header ${isVisible ? 'is_sticky' : ''}`}>
+      <div className={`header ${isVisible ? 'is_sticky' : ''}` }>
         <div className="header-logo">
           <Link to='/'>
             <img src="./images/logo.png" alt="logo" />
@@ -50,12 +50,12 @@ const Header = ({ isVisible }) => {
               </ul>
             </li>
             <li className='nvbar-item'>
-              <Link to='/' className='nvbar-link'>
+              <Link to='/news' className='nvbar-link'>
                 YANGILIKLAR
               </Link>
             </li>
             <li className='nvbar-item'>
-              <Link to='/' className='nvbar-link'>
+              <Link to='/contact' className='nvbar-link'>
                 ALOQA
               </Link>
             </li>
@@ -91,16 +91,16 @@ const Header = ({ isVisible }) => {
       <div className='phone-menu' style={{ transform: isMobile && `translateX(0)` }}>
         <ul className='phone-menu-list'>
           <li>
-            <Link className='phone-menu-link' to='/'>Asosiy</Link>
+            <Link className='phone-menu-link' to='/' onClick={() => setIsMobile(false)} >Asosiy</Link>
           </li>
           <li>
-            <a className='phone-menu-link' href='#about'>Kompaniya haqida</a>
+            <a className='phone-menu-link' href='#about' onClick={() => setIsMobile(false)} >Kompaniya haqida</a>
           </li>
           <li>
-            <Link className='phone-menu-link' to='/'>Yangiliklar</Link>
+            <Link className='phone-menu-link' to='/' onClick={() => setIsMobile(false)} >Yangiliklar</Link>
           </li>
           <li>
-            <a className='phone-menu-link' href='/'>Aloqa</a>
+            <a className='phone-menu-link' href='#contact' onClick={() => setIsMobile(false)} >Aloqa</a>
           </li>
         </ul>
         <button

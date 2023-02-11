@@ -1,27 +1,20 @@
-import { BrowserRouter,} from "react-router-dom"
+import { BrowserRouter, Route, Routes, } from "react-router-dom"
 import Header from "../Header/Header"
 import { useState, useEffect } from 'react';
-import VideoBox from "../VideoBox/VideoBox";
-import AboutBox from "../AboutBox/AboutBox";
-import PerNumbers from "../PerNumbers/PerNumbers";
-import ProductsSlider from "../ProductsSlider/ProductsSlider";
-import Technologies from "../Technologies/Technologies";
-import Counter from "../Counter/Counter";
-import Partners from "../Partners/Partners";
-import News from "../News/News";
-import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
+import NewsPage from "../../NewsPage/NewsPage";
+import Main from "./Main";
+import Contact from "../Contact/Contact";
 
 const App = () => {
   const [offset, setOffset] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      if(window.pageYOffset>350){
+      if (window.pageYOffset > 350) {
         setIsVisible(true)
-      } 
-      else{
+      }
+      else {
         setOffset(window.pageYOffset)
         setIsVisible(false)
       }
@@ -31,15 +24,11 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header isVisible={isVisible} />
-      <VideoBox offset={offset} isVisible={isVisible} />
-      <AboutBox />
-      <PerNumbers />
-      <ProductsSlider />
-      <Technologies />
-      <Counter />
-      <Partners />
-      <News />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Main offset={offset} isVisible={isVisible} />} />
+        <Route path="/news" element={<NewsPage />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
     </BrowserRouter>
   )

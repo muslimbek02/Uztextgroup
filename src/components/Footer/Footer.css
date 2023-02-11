@@ -52,7 +52,6 @@
     margin: 20px auto;
   }
   .footer-item input {
-    /* margin: 0 auto; */
     width: 90%;
   }
 }
@@ -117,7 +116,7 @@
   background: transparent;
   color: #fff;
   transition: all 0.16s linear;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .footer-item button:hover {
   color: #f24a00;

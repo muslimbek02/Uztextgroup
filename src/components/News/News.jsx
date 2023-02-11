@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom';
 import './News.css';
 
 const News = () => {
     return (
-      <div className='news'>
+      <div className='news' id='news'>
             <div className="container">
                 <div className="news-top">
                     <span className='news-title'>Yangiliklar</span>
-                    <a href="#222" className='all-article'>Barcha maqolalarni ko'rish</a>
+                    <Link to="/news" className='all-article'>Barcha maqolalarni ko'rish</Link>
                 </div>
             </div>
         <div className="news-card">
