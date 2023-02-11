@@ -39,7 +39,7 @@ const App = () => {
       <Counter />
       <Partners />
       <News />
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </BrowserRouter>
   )

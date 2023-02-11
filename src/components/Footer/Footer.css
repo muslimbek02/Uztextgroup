@@ -52,10 +52,11 @@
     margin: 20px auto;
   }
   .footer-item input {
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    width: 90%;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 442px) {
   .footer-wrapper .footer-top {
     display: grid;
     grid-template-columns: auto;
