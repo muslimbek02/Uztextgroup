@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import Footer from "../Footer/Footer";
 import NewsPage from "../../NewsPage/NewsPage";
 import Main from "./Main";
-import Contact from "../Contact/Contact";
+import ContactPage from "./ContactPage";
+import AboutPage from "../../AboutPage/AboutPage";
 
 const App = () => {
   const [offset, setOffset] = useState(false);
@@ -27,7 +28,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Main offset={offset} isVisible={isVisible} />} />
         <Route path="/news" element={<NewsPage />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

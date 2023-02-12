@@ -26,7 +26,7 @@ const AboutBox = () => {
               <p>"UZTEX GROUP" ning tarixi 10 yildan ko'proq vaqtga borib taqaladi, o'shanda 2009 yilda bo'yalgan tuval ishlab chiqarish bo'yicha birinchi zavod ishga tushirilgan.</p>
               <p>Bugungi kunda O'zbekiston Respublikasining turli hududlarida joylashgan "UZTEX GROUP" korxonalarining yillik ishlab chiqarish quvvati 45000 tonnadan ortiq har xil turdagi kulrang ipni tashkil qiladi.</p>
             </div>
-            <Link to='/' className='about-readmore-link'>BIZ HAQIMIZDA KO'PROQ</Link>
+            <Link to='/about' className='about-readmore-link'>BIZ HAQIMIZDA KO'PROQ</Link>
           </div>
         </div>
       </div>

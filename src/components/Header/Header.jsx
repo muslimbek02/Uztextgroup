@@ -25,15 +25,15 @@ const Header = ({ isVisible }) => {
               </Link>
             </li>
             <li className='nvbar-item nvbar-dropdown'>
-              <a href='#about' className='nvbar-link'>
+              <Link to='/about' className='nvbar-link'>
                 KOMPANIYA HAQIDA
-              </a>
+              </Link>
               <ul className="dropdown-list">
                 <li>
-                  <a href='#products'>Mahsulotlar</a>
+                  <Link to='/'>Mahsulotlar</Link>
                 </li>
                 <li>
-                  <a href='#technologies'>Texnologiyalar</a>
+                  <Link to='/'>Texnologiyalar</Link>
                 </li>
                 <li>
                   <Link to='/'>Sifat</Link>
@@ -94,13 +94,13 @@ const Header = ({ isVisible }) => {
             <Link className='phone-menu-link' to='/' onClick={() => setIsMobile(false)} >Asosiy</Link>
           </li>
           <li>
-            <a className='phone-menu-link' href='#about' onClick={() => setIsMobile(false)} >Kompaniya haqida</a>
+            <Link className='phone-menu-link' to='/about' onClick={() => setIsMobile(false)} >Kompaniya haqida</Link>
           </li>
           <li>
-            <Link className='phone-menu-link' to='/' onClick={() => setIsMobile(false)} >Yangiliklar</Link>
+            <Link className='phone-menu-link' to='/news' onClick={() => setIsMobile(false)} >Yangiliklar</Link>
           </li>
           <li>
-            <a className='phone-menu-link' href='#contact' onClick={() => setIsMobile(false)} >Aloqa</a>
+            <Link className='phone-menu-link' to='/contact' onClick={() => setIsMobile(false)} >Aloqa</Link>
           </li>
         </ul>
         <button
@@ -111,7 +111,7 @@ const Header = ({ isVisible }) => {
         </button>
         <div className="menu-panel-bottom">
           <p>© 2009-2022 <b>UZTEX GROUP</b>. All
-            Rights Reserved. Design by <b>md.uz</b>
+            Rights Reserved. Design by <b>Muslimbek & Rustamjon</b>
           </p>
         </div>
       </div>
