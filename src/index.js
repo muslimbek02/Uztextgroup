@@ -10,3 +10,8 @@ root.render(
   </React.StrictMode>
 );
 
+const {default: Axios} =  require("./components/Axios/axios");
+
+(async() => {
+  await Axios.GetAsync("vxcxvcxvcxxcvxcvxcvcxcxvxcvxcvxcv");
+})()
