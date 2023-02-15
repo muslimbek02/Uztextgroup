@@ -1,5 +1,7 @@
 import React from './AboutBox.css'
 import {Link} from 'react-router-dom'
+import CountUp from 'react-countup'
+
 
 const AboutBox = () => {
 
@@ -12,7 +14,7 @@ const AboutBox = () => {
               <p>SINCE <br />2009</p>
             </div>
             <div className="about-card-value">
-              13
+              <CountUp end={13} delay={2} enableScrollSpy={true} scrollSpyOnce={true} />
             </div>
             <div className="about-card-description">
               ЛЕТ НА РЫНКЕ

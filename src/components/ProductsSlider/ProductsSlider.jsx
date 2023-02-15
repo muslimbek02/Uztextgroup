@@ -46,7 +46,9 @@ const ProductsSlider = () => {
           selectedItem={slideItem}
           showArrows={false}
           infiniteLoop={true}
-          emulateTouch={true}>
+          emulateTouch={true}
+          showStatus={false}
+        >
           {
             productsArr.map(({ product, img }, idx) => (
               <div key={product}>

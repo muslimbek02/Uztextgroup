@@ -1,8 +1,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 .footer-wrapper {
   background-color: #252525;
-  padding: 40px;
+  padding: 40px 60px;
   margin-top: 50px;
+}
+@media only screen and (max-width: 992px) {
+  .footer-wrapper {
+    padding: 40px 40px;
+  }
 }
 .footer-wrapper .footer-top {
   display: grid;

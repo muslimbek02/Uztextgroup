@@ -2,7 +2,7 @@
 
 
 .about-box{
-  padding: 700px 0px 60px;
+  padding: calc(100vh + 200px) 0px 60px;
 }
 .about-box-inner {
   display: flex;
@@ -53,6 +53,7 @@
   z-index: 2;
   font-weight: 600;
   margin-bottom: 4px;
+  width: 180px;
 }
 .about-card-description {
   color: #000;
@@ -120,6 +121,9 @@
 /*------------- AboutBox media query start --------------*/
 
 @media only screen and (max-width: 1100px) {
+  .about-box{
+    padding: 700px 0px 60px;
+  }
   .about-card{
     margin-right: 100px;
   }
