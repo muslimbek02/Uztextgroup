@@ -6,48 +6,38 @@ import { ReactComponent as Prev } from './Icons/prev-btn-img.svg'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './ProductsSlider.css'
 const ProductsSlider = () => {
-  const [slideItem, setSlideItem] = useState(0);
-  
-  const increase = () => {
-    if(slideItem < productsArr.length - 1){
-      setSlideItem(prev => prev + 1)
-    }
-    else{
-      setSlideItem(0)
-    }
-  }
-  
-  const decrease = () => {
-    if(slideItem > 0){
-      setSlideItem(prev => prev - 1)
-    }
-    else{
-      setSlideItem(productsArr.length - 1)
-    }
-  }
 
   return (
     <div className='products' id='products'>
       <h2>Bizning ishlab chiqarish</h2>
       <div className="carousel-product">
-        <button
-          className="next-slide-btn"
-          onClick={increase}
-        >
-          <Next />
-        </button>
-        <button
-          className="prev-slide-btn"
-          onClick={decrease}
-        >
-          <Prev />
-        </button>
         <Carousel
-          selectedItem={slideItem}
           showArrows={false}
           infiniteLoop={true}
+          interval={5000}
+          autoPlay={true}
           emulateTouch={true}
           showStatus={false}
+          renderArrowNext={(clickHandler) => {
+            return (
+              <button
+                className="next-slide-btn"
+                onClick={clickHandler}
+              >
+                <Next />
+              </button>
+            )
+          }}
+          renderArrowPrev={(clickHandler) => {
+            return (
+              <button
+                className="prev-slide-btn"
+                onClick={clickHandler}
+              >
+                <Prev />
+              </button>
+            )
+          }}
         >
           {
             productsArr.map(({ product, img }, idx) => (

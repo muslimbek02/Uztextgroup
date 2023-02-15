@@ -32,7 +32,7 @@
   transition: all .15s linear;
 }
 .per-numbers-item:hover {
-  box-shadow: 0 0 8px 2px #222;
+  box-shadow: 0 0 8px 0px #222;
   transform: scale(1.05);
 }
 .per-numbers-item-title {
