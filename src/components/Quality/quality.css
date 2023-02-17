@@ -38,6 +38,59 @@
 }
 
 .quality-swiper {
-  padding: 0 60px;
+  /* padding: 0 40px; */
   position: relative;
+}
+
+.sertificates-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 44px;
+  margin-bottom: 70px;
+}
+
+.quality-swiper button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1020;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #666;
+  border: .5px solid rgb(204, 199, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quality-swiper button svg {
+  width: 30px;
+  height: 30px;
+}
+
+.quality-swiper button svg polyline {
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
+.quality-swiper .quality-btn-prev {
+  left: 10px;
+}
+
+.quality-swiper .quality-btn-next {
+  right: 10px;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-slide img {
+  height: 270px;
+  /* width: 90%; */
+  box-shadow: 0 4px 10px rgb(194 193 193);
 }
