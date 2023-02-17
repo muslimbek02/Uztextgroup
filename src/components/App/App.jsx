@@ -6,6 +6,7 @@ import NewsPage from "../../NewsPage/NewsPage";
 import Main from "./Main";
 import ContactPage from "./ContactPage";
 import AboutPage from "../../AboutPage/AboutPage";
+import Quality from "../Quality/Quality";
 
 const App = () => {
   const [offset, setOffset] = useState(false);
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/news" element={<NewsPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/quality" element={<Quality />} />
       </Routes>
       <Footer />
     </BrowserRouter>
