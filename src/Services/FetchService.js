@@ -6,7 +6,7 @@ const axios = new Axios({
     baseURL: config.BACKEND_API_URL
 })
 
-export default FetchService = {
+export const FetchService = {
     axios: axios,
 
     /**
