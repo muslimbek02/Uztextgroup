@@ -6,7 +6,7 @@ const axios = new Axios({
     baseURL: config.BACKEND_API_URL
 })
 
-export default FetchService = {
+export const FetchService = {
     axios: axios,
 
     /**
@@ -26,7 +26,7 @@ export default FetchService = {
      * 
      * @param {string} path 
      * @param {object} data 
-     * @param {import("axios").AxiosDefaults} config 
+     * @param {import("axios").AxiosDefaults} config
      * @returns 
      */
     async PostAsync(path, data, config = null) {
@@ -67,7 +67,7 @@ export default FetchService = {
      * 
      * @param {string} url 
      * @param {object} data 
-     * @param {'POST' | 'GET' | 'PUT' | 'DELETE'} method 
+     * @param {'POST' | 'GET' | 'PUT' | 'DELETE'} method
      * @param {import("axios").AxiosDefaults} config 
      */
     async ExecuteRequestAsync(path, data, method, config) {
