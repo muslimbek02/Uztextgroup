@@ -1,9 +1,14 @@
-import { Axios } from "axios";
+import { Axios, AxioRes } from "axios";
 const config = require("../AppConfig/config.json");
 
 
+
 const axios = new Axios({
-    baseURL: config.BACKEND_API_URL
+    baseURL: config.BACKEND_API_URL,
+    responseType: "json",
+    transformResponse: (res) => {
+        return JSON.parse(res);
+    }
 })
 
 export const FetchService = {
@@ -88,6 +93,6 @@ export const FetchService = {
      */
     SetConfig(config) {
         if (config !== null)
-            this.axios.defaults = config;
+            this.axios.defaults = { ...config, ...this.axios.defaults };
     }
 }

@@ -1,24 +1,25 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FetchService } from '../../Services/FetchService';
-import Loader from '../Loader/loader';
+import Block from "../Block/block";
 import './News.css';
 
+
 const News = () => {
-    const [news, setNews] = useState([]);
-    console.log(news);
+    const [apiNews, setApiNews] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
+
+    useEffect(() => {
+        setIsLoading(true);
+        FetchService
+            .GetAsync(`${localStorage.getItem("lang") ?? "uz"}/api/news?size=3&page=1`)
+            .then(res => setApiNews(res.data))
+            .catch(console.log)
+            .finally(() => setIsLoading(false));
+    }, []);
     return (
         <div className='news' id='news'>
-            <Loader
-                actionCallback={new Promise((res, rej) => {
-                    FetchService
-                        .GetAsync(`/${localStorage.getItem("lang") ?? "uz"}/api/news?size=3&page=1`)
-                        .then(res)
-                        .catch(rej);
-                })}
-                isBackground={false}
-                setResultCallback={setNews}
-            />
+            <Block state={isLoading} />
             <div className="container">
                 <div className="news-top">
                     <span className='news-title'>Yangiliklar</span>
@@ -29,14 +30,16 @@ const News = () => {
                 <div className="container">
                     <div className="news-cards">
                         {
-                            news?.map(({id, title,date}) => (
+                            apiNews?.map(({ id, title, date }) => (
                                 <div className="card-item" key={id}>
                                     <a href="#1">
-                                        <img src="./images/news1.jpg" alt="" />
+                                        <img src={`${FetchService.axios.defaults.baseURL}/uploads/${id}${localStorage.getItem("lang") ?? "uz"}.jpg`}
+                                            alt=""
+                                        />
                                         <div className='news-content'>
                                             <div className="news-footer">
                                                 <span className="news-category">Yangiliklar</span>
-                                                <span className="news-date">{new Date(date)}</span>
+                                                <span className="news-date">{new Date(date).toLocaleDateString()}</span>
                                             </div>
                                             <span className="post-title">
                                                 {title}

@@ -1,11 +1,11 @@
 import React from 'react'
-import './loader.css'
-const Loader1 = () => {
-  return (
+import './block.css'
+const Block = ({ state = false }) => {
+  return state ? (
     <div className='blur'>
       <img src="./images/loader/Loading.gif" alt="" />
     </div>
-  )
+  ) : null;
 }
 
-export default Loader1
+export default Block
