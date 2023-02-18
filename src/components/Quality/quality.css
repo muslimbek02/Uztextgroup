@@ -1,0 +1,96 @@
+.quality-bg-content {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url(./quality-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.quality-bg-content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.quality-title {
+  font-size: 48px;
+  line-height: 0.625;
+  font-family: 'Teko', Helvetica, sans-serif;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.quality-text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #666;
+  margin-bottom: 75px;
+  text-align: justify;
+}
+
+.quality-swiper {
+  /* padding: 0 40px; */
+  position: relative;
+}
+
+.sertificates-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 44px;
+  margin-bottom: 70px;
+}
+
+.quality-swiper button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1020;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #666;
+  border: .5px solid rgb(204, 199, 199);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quality-swiper button svg {
+  width: 30px;
+  height: 30px;
+}
+
+.quality-swiper button svg polyline {
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
+.quality-swiper .quality-btn-prev {
+  left: 10px;
+}
+
+.quality-swiper .quality-btn-next {
+  right: 10px;
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-slide img {
+  height: 270px;
+  /* width: 90%; */
+  box-shadow: 0 4px 10px rgb(194 193 193);
+}

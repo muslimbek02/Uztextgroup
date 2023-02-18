@@ -13,7 +13,7 @@
 }
 .carousel {
   padding: 0 100px;
-  z-index: -2;
+  /* z-index: -2; */
 }
 .control-dots {
   left: 0;

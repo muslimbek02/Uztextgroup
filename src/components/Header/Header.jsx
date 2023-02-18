@@ -36,7 +36,7 @@ const Header = ({ isVisible }) => {
                   <Link to='/'>Texnologiyalar</Link>
                 </li>
                 <li>
-                  <Link to='/'>Sifat</Link>
+                  <Link to='/quality'>Sifat</Link>
                 </li>
                 <li>
                   <Link to='/'>Bizning mijozlarimiz</Link>
