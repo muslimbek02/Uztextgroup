@@ -1,0 +1,82 @@
+.job-details-box {
+  margin-top: 100px;
+}
+
+.job-details-title {
+  text-align: center;
+  font-size: 34px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.job-details-desc {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.job-details-time,
+.job-details-salary {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.job-details-time span,
+.job-details-salary span {
+  font-size: 20px;
+}
+
+.job-details-time p,
+.job-details-salary p {
+  margin-left: 50px;
+  font-style: oblique;
+}
+
+
+/*---------------------- form style start ---------------------*/
+
+.job-details-form {
+  margin-top: 100px;
+}
+
+.job-details-form form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.job-details-form form input {
+  padding: 10px 20px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.client-data-box {
+  display: grid;
+  gap: 30px;
+  grid-template-columns:  repeat(auto-fill, minmax(400px, 3fr));
+  margin-bottom: 50px;
+}
+.location-box{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+}
+
+.location-box div input {
+  width: 100%;
+}
+
+.job-submit-btn {
+  padding: 10px 35px;
+  margin-top: 30px;
+  border: none;
+  background-color: #007ACC;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 17px;
+  cursor: pointer;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*---------------------- form style end ---------------------*/

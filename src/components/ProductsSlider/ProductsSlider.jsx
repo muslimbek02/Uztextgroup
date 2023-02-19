@@ -18,6 +18,7 @@ const ProductsSlider = () => {
           autoPlay={true}
           emulateTouch={true}
           showStatus={false}
+          showThumbs={false}
           renderArrowNext={(clickHandler) => {
             return (
               <button

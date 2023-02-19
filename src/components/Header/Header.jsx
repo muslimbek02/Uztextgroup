@@ -45,7 +45,7 @@ const Header = ({ isVisible }) => {
                   <Link to='/'>Ta'minot geografiyasi</Link>
                 </li>
                 <li>
-                  <Link to='/'>Karyera</Link>
+                  <Link to='/jobs'>Karyera</Link>
                 </li>
               </ul>
             </li>
