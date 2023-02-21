@@ -1,11 +1,17 @@
-import { Axios, AxioRes } from "axios";
+import { Axios } from "axios";
 const config = require("../AppConfig/config.json");
 
 
 
 const axios = new Axios({
     baseURL: config.BACKEND_API_URL,
+    headers: {
+        "Content-Type": "application/JSON",
+    },
     responseType: "json",
+    transformRequest: (req) => {
+        return JSON.stringify(req);
+    },
     transformResponse: (res) => {
         return JSON.parse(res);
     }
@@ -61,7 +67,7 @@ export const FetchService = {
      * @param {import("axios").AxiosDefaults} config 
      * @returns 
      */
-    async Delete(path, config = null) {
+    async DeleteAsync(path, config = null) {
         try {
             return await this.ExecuteRequestAsync(path, null, 'DELETE', config)
         } catch (error) {
@@ -76,14 +82,20 @@ export const FetchService = {
      * @param {import("axios").AxiosDefaults} config 
      */
     async ExecuteRequestAsync(path, data, method, config) {
+        this.SetConfig(config);
         try {
-            this.SetConfig(config);
-            return await this.axios.request({
-                url: path,
+            console.log("Executing...")
+            const response = await this.axios.request({
+                url: (localStorage.getItem("lang") ?? "uz") + path,
                 data: data,
                 method: method
-            })
+            });
+            console.log("Executed", response);
+            if (response.status < 200 || response.status > 299)
+                throw response;
+            return response;
         } catch (error) {
+            console.log("An Exception", error);
             throw error;
         }
     },

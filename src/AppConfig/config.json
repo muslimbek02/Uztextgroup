@@ -1,4 +1,4 @@
 {
-    "BACKEND_API_URL" : "https://031b-95-214-210-17.eu.ngrok.io",
+    "BACKEND_API_URL" : "http://localhost:5092/",
     "DEFAULT_HOST": ""
 }
