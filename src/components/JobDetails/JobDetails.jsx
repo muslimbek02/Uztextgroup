@@ -4,6 +4,7 @@ import dot, { object } from "dot-object";
 import { ToastContainer, toast } from "react-toastify";
 import './job-details.css'
 import { AxiosResponse, formToJSON } from "axios";
+import Block from '../Block/block';
 
 
 const JobDetails = () => {
@@ -37,6 +38,7 @@ const JobDetails = () => {
   }
   return (
     <div className="job-details-wrapper">
+      <Block state={isLoading}/>
       <div className="header-back"></div>
       <div className="container">
         <div className="job-details-box">
@@ -92,7 +94,7 @@ const JobDetails = () => {
               </div>
               <div>
                 <label htmlFor="">Postal kodi</label>
-                <input type="text" placeholder='30' name='createAddressDto.postalCode' />
+                <input type="number" placeholder='30' name='createAddressDto.postalCode' />
               </div>
             </div>
             <label htmlFor='applicationMessage'>Xabar:</label>
