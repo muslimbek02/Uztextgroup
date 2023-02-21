@@ -12,7 +12,7 @@
   margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
-  gap: 20px;
+  gap: 25px;
   align-items: stretch;
 }
 

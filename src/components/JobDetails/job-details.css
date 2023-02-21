@@ -79,4 +79,11 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+
+@media only screen and (max-width: 902px) {
+  .client-data-box{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+  }
+}
 /*---------------------- form style end ---------------------*/
