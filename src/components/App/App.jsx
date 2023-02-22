@@ -9,6 +9,7 @@ import AboutPage from "../../AboutPage/AboutPage";
 import Quality from "../Quality/Quality";
 import Jobs from "../Jobs/Jobs";
 import JobDetails from "../JobDetails/JobDetails";
+import NewsDetails from "../NewsDetails/NewsDetails";
 
 const App = () => {
   const [offset, setOffset] = useState(false);
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="/quality" element={<Quality />} />
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/job-details" element={<JobDetails />} />
+        <Route path="/news-detail/:id" element={<NewsDetails />} />
       </Routes>
       <Footer />
     </BrowserRouter>

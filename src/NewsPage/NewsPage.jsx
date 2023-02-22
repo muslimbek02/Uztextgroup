@@ -5,6 +5,7 @@ import { articleList } from './data'
 import { useState, useEffect } from "react";
 import Block from "../components/Block/block";
 import { FetchService } from '../Services/FetchService';
+import NewsDetails from '../components/NewsDetails/NewsDetails';
 const NewsPage = () => {
   const [apiNews, setApiNews] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -16,6 +17,7 @@ const NewsPage = () => {
       .catch(console.log)
       .finally(() => setIsLoading(false));
   }, []);
+  console.log(apiNews);
   return (
     <div className='newspage-wrapper'>
       <Block state={isLoading} />
@@ -27,7 +29,7 @@ const NewsPage = () => {
             {
               apiNews.map(({ id, title, date, description }) => (
                 <div className="news-article-item" key={id}>
-                  <Link to='/' className='article-link'>
+                  <Link to = {`/news-detail/${id}`} className='article-link'>
                     <div className="article-img-box">
                       <img
                         src={`${FetchService.axios.defaults.baseURL}/uploads/${id}${localStorage.getItem("lang") ?? "uz"}.jpg`}
@@ -41,7 +43,7 @@ const NewsPage = () => {
                       <p className="article-body-text">
                         {description}
                       </p>
-                      <Link to='/' className='article-more-btn'>
+                      <Link to={`/news-detail/${id}`} className='article-more-btn'>
                         <span>BATAFSIL</span> <AiOutlineRight />
                       </Link>
                     </div>
