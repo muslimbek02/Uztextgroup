@@ -12,9 +12,9 @@ const NewsPage = () => {
           <p className='news-heading-text'>So'ngi yangiliklar</p>
           <div className="news-article-list">
             {
-              articleList.map(({img, title, date, body})=>(
+              articleList.map(({img, title, date, body},index)=>(
                 <div className="news-article-item" key={title}>
-                  <Link to='/' className='article-link'>
+                  <Link to={`/news-detail/${index + 1 }`} className='article-link'>
                     <div className="article-img-box">
                       <img src={img} alt={title} />
                     </div>
@@ -26,7 +26,7 @@ const NewsPage = () => {
                       <p className="article-body-text">
                         {body}
                       </p>
-                      <Link to='/' className='article-more-btn'>
+                      <Link to={`/news-detail/${index + 1 }`} className='article-more-btn'>
                         <span>BATAFSIL</span> <AiOutlineRight />
                       </Link>
                     </div>                  

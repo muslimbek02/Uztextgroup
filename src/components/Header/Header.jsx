@@ -14,7 +14,7 @@ const Header = ({ isVisible }) => {
       <div className={`header ${isVisible ? 'is_sticky' : ''}` }>
         <div className="header-logo">
           <Link to='/'>
-            <img src="./images/logo.png" alt="logo" />
+            <img src="/images/logo.png" alt="logo" />
           </Link>
         </div>
         <div className="nvbar-wrapper">
@@ -62,18 +62,18 @@ const Header = ({ isVisible }) => {
           </ul>
           <div className='lang-box'>
             <Link to='/' className='lang-link nvbar-dropdown'>
-              <img className='per-lang' src="./images/flag-uzb.jpg" alt="lang-img" />
+              <img className='per-lang' src="/images/flag-uzb.jpg" alt="lang-img" />
               uzb
               <ul className="dropdown-list dropdown-lang">
                 <li>
                   <Link to='/'>
-                    <img className='per-lang' src="./images/flag-rus.png" alt="lang-img" />
+                    <img className='per-lang' src="/images/flag-rus.png" alt="lang-img" />
                     Ru
                   </Link>
                 </li>
                 <li>
                   <Link to='/'>
-                    <img className='per-lang' src="./images/flag-eng.jpg" alt="lang-img" />
+                    <img className='per-lang' src="/images/flag-eng.jpg" alt="lang-img" />
                     eng
                   </Link>
                 </li>
