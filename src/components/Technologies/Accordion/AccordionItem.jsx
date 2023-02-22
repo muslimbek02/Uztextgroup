@@ -1,6 +1,6 @@
 import {useRef} from 'react'
 import {BsChevronDown} from 'react-icons/bs'
-import './accordion.css'
+import './Accordion.css'
 
 const AccordionItem = (props) => {
 

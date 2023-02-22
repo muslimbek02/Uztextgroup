@@ -12,7 +12,7 @@ const News = () => {
     useEffect(() => {
         setIsLoading(true);
         FetchService
-            .GetAsync(`${localStorage.getItem("lang") ?? "uz"}/api/news?size=3&page=1`)
+            .GetAsync(`/api/news?size=3&page=1`)
             .then(res => setApiNews(res.data))
             .catch(console.log)
             .finally(() => setIsLoading(false));
@@ -33,7 +33,8 @@ const News = () => {
                             apiNews?.map(({ id, title, date }) => (
                                 <div className="card-item" key={id}>
                                     <a href="#1">
-                                        <img src={`${FetchService.axios.defaults.baseURL}/uploads/${id}${localStorage.getItem("lang") ?? "uz"}.jpg`}
+                                        <img 
+                                        src={`${FetchService.axios.defaults.baseURL}/uploads/${id}${localStorage.getItem("lang") ?? "uz"}.jpg`}
                                             alt=""
                                         />
                                         <div className='news-content'>
