@@ -30,30 +30,30 @@ const News = () => {
                 <div className="container">
                     <div className="news-cards">
                         {
-                            apiNews?.map(({ id, title, date }) => (
-                                <div className="card-item" key={id}>
-                                    <a href="#1">
-                                        <img 
-                                        src={`${FetchService.axios.defaults.baseURL}/uploads/${id}${localStorage.getItem("lang") ?? "uz"}.jpg`}
+                            apiNews?.map((news) => (
+                                <div className="card-item" key={news.id}>
+                                    <Link to={`/news-detail/${encodeURI(JSON.stringify(news))}`}>
+                                        <img
+                                            src={`${FetchService.axios.defaults.baseURL}/uploads/${news.id}${localStorage.getItem("lang") ?? "uz"}.jpg`}
                                             alt=""
                                         />
                                         <div className='news-content'>
                                             <div className="news-footer">
                                                 <span className="news-category">Yangiliklar</span>
-                                                <span className="news-date">{new Date(date).toLocaleDateString()}</span>
+                                                <span className="news-date">{new Date(news.date).toLocaleDateString()}</span>
                                             </div>
                                             <span className="post-title">
-                                                {title}
+                                                {news.title}
                                             </span>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
                             ))
                         }
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 export default News;

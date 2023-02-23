@@ -1,4 +1,4 @@
 {
-    "BACKEND_API_URL" : "https://localhost:7271/",
+    "BACKEND_API_URL" : "http://localhost:5092/",
     "DEFAULT_HOST": ""
 }

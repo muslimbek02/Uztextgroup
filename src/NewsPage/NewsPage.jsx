@@ -17,7 +17,6 @@ const NewsPage = () => {
       .catch(console.log)
       .finally(() => setIsLoading(false));
   }, []);
-  console.log(apiNews);
   return (
     <div className='newspage-wrapper'>
       <Block state={isLoading} />
@@ -27,23 +26,23 @@ const NewsPage = () => {
           <p className='news-heading-text'>So'ngi yangiliklar</p>
           <div className="news-article-list">
             {
-              apiNews.map(({ id, title, date, description }) => (
-                <div className="news-article-item" key={id}>
-                  <Link to = {`/news-detail/${id}`} className='article-link'>
+              apiNews.map((news, index) => (
+                <div className="news-article-item" key={news.id}>
+                  <Link to={`/news-detail/${encodeURI(JSON.stringify(news))}`} className='article-link'>
                     <div className="article-img-box">
                       <img
-                        src={`${FetchService.axios.defaults.baseURL}/uploads/${id}${localStorage.getItem("lang") ?? "uz"}.jpg`}
-                        alt={title} />
+                        src={`${FetchService.axios.defaults.baseURL}/uploads/${news.id}${localStorage.getItem("lang") ?? "uz"}.jpg`}
+                        alt={news.title} />
                     </div>
                     <div className="news-article-body">
-                      <p className="article-date">Yangiliklar <span>{new Date(date).toLocaleDateString()}</span></p>
+                      <p className="article-date">Yangiliklar <span>{new Date(news.date).toLocaleDateString()}</span></p>
                       <p className="article-title-text">
-                        {title}
+                        {news.title}
                       </p>
                       <p className="article-body-text">
-                        {description}
+                        {news.description}
                       </p>
-                      <Link to={`/news-detail/${id}`} className='article-more-btn'>
+                      <Link to={`/news-detail/${encodeURI(JSON.stringify(news))}`} className='article-more-btn'>
                         <span>BATAFSIL</span> <AiOutlineRight />
                       </Link>
                     </div>

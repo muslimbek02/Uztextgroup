@@ -2,16 +2,23 @@ import { Link } from 'react-router-dom'
 import './header.css'
 import { AiOutlineClose } from 'react-icons/ai'
 import { useState } from 'react';
-
+import i18n from '../../Services/MultiLanguageComponent/i18n';
 const Header = ({ isVisible }) => {
 
   const [isMobile, setIsMobile] = useState(false);
-  
-  document.body.style.overflow = isMobile ? 'hidden' : '';
 
+  let changeLanguageCode = (ev) => {
+    const code = ev.target.lang
+    if (["uz", "en", "ru"].includes(code) && localStorage.getItem("lang") !== code) {
+      localStorage.removeItem("lang");
+      localStorage.setItem("lang", code);
+    }
+    window.location.reload();
+  }
+  document.body.style.overflow = isMobile ? 'hidden' : '';
   return (
     <>
-      <div className={`header ${isVisible ? 'is_sticky' : ''}` }>
+      <div className={`header ${isVisible ? 'is_sticky' : ''}`}>
         <div className="header-logo">
           <Link to='/'>
             <img src="./images/logo.png" alt="logo" />
@@ -21,12 +28,12 @@ const Header = ({ isVisible }) => {
           <ul className="nvbar">
             <li className='nvbar-item'>
               <Link to='/' className='nvbar-link'>
-                ASOSIY
+                {i18n.Get('header.menu.first')}
               </Link>
             </li>
             <li className='nvbar-item nvbar-dropdown'>
               <Link to='/about' className='nvbar-link'>
-                KOMPANIYA HAQIDA
+                {i18n.Get("header.menu.second")}
               </Link>
               <ul className="dropdown-list">
                 <li>
@@ -61,18 +68,18 @@ const Header = ({ isVisible }) => {
             </li>
           </ul>
           <div className='lang-box'>
-            <Link to='/' className='lang-link nvbar-dropdown'>
+            <Link to='/' lang='uz' onClick={changeLanguageCode} className='lang-link nvbar-dropdown'>
               <img className='per-lang' src="./images/flag-uzb.jpg" alt="lang-img" />
               uzb
               <ul className="dropdown-list dropdown-lang">
                 <li>
-                  <Link to='/'>
+                  <Link to='/' lang='ru' onClick={changeLanguageCode}>
                     <img className='per-lang' src="./images/flag-rus.png" alt="lang-img" />
                     Ru
                   </Link>
                 </li>
                 <li>
-                  <Link to='/'>
+                  <Link to='/' lang='en' onClick={changeLanguageCode}>
                     <img className='per-lang' src="./images/flag-eng.jpg" alt="lang-img" />
                     eng
                   </Link>
