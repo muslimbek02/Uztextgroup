@@ -8,8 +8,10 @@ const Header = ({ isVisible }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   let changeLanguageCode = (ev) => {
-    const code = ev.target.lang
-    if (["uz", "en", "ru"].includes(code) && localStorage.getItem("lang") !== code) {
+    let code = ev.target.lang
+    console.log(code); 
+    if (["uz", "en", "ru"].includes(code) && localStorage.getItem("lang") != code) {
+      console.log(code);
       localStorage.removeItem("lang");
       localStorage.setItem("lang", code);
     }
@@ -37,33 +39,33 @@ const Header = ({ isVisible }) => {
               </Link>
               <ul className="dropdown-list">
                 <li>
-                  <Link to='/'>Mahsulotlar</Link>
+                  <Link to='/'>{i18n.Get("header.menu.secondFirst")}</Link>
                 </li>
                 <li>
-                  <Link to='/'>Texnologiyalar</Link>
+                  <Link to='/'>{i18n.Get("header.menu.secondSecond")}</Link>
                 </li>
                 <li>
-                  <Link to='/quality'>Sifat</Link>
+                  <Link to='/quality'>{i18n.Get("header.menu.secondThird")}</Link>
                 </li>
                 <li>
-                  <Link to='/'>Bizning mijozlarimiz</Link>
+                  <Link to='/'>{i18n.Get("header.menu.secondFourth")}</Link>
                 </li>
                 <li>
-                  <Link to='/'>Ta'minot geografiyasi</Link>
+                  <Link to='/'>{i18n.Get("header.menu.secondFiveth")}</Link>
                 </li>
                 <li>
-                  <Link to='/jobs'>Karyera</Link>
+                  <Link to='/jobs'>{i18n.Get("header.menu.secondSixth")}</Link>
                 </li>
               </ul>
             </li>
             <li className='nvbar-item'>
               <Link to='/news' className='nvbar-link'>
-                YANGILIKLAR
-              </Link>
+                {i18n.Get("header.menu.third")} 
+               </Link>
             </li>
             <li className='nvbar-item'>
               <Link to='/contact' className='nvbar-link'>
-                ALOQA
+                {i18n.Get("header.menu.fourth")}
               </Link>
             </li>
           </ul>

@@ -17,7 +17,6 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-responsive-carousel": "^3.2.23",
-    "react-scripts": "5.0.1",
     "react-scroll-parallax": "^3.3.2",
     "react-toastify": "^9.1.1",
     "swiper": "^9.0.3",
@@ -48,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "react-router-dom": "^6.8.0"
+    "react-router-dom": "^6.8.0",
+    "react-scripts": "^5.0.1"
   }
 }

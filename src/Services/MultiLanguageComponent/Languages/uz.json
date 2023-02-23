@@ -2,7 +2,20 @@
     "header": {
         "menu": {
             "first": "Asosiy",
-            "second": "Kompaniya haqida"
+            "second": "Kompaniya haqida",
+            "third": "Yangiliklar",
+            "fourth": "Aloqa",
+            "secondFirst" : "Mahsulotlar",
+            "secondSecond" : "Texnologiyalar",
+            "secondThird" : "Sifat",
+            "secondFourth" : "Bizning mijozlarimiz",
+            "secondFiveth" : "Ta'minot geografiyasi",
+            "secondSixth" : "Karyera"
+            }
+    },
+    "company" : {
+        "about" : {
+            "since" : "yildan beri bozorda"
         }
     }
 }

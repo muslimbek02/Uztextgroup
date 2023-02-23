@@ -1,7 +1,7 @@
 import React from './AboutBox.css'
 import {Link} from 'react-router-dom'
 import CountUp from 'react-countup'
-
+import i18n from '../../Services/MultiLanguageComponent/i18n';
 
 const AboutBox = () => {
 
@@ -17,7 +17,7 @@ const AboutBox = () => {
               <CountUp end={13} delay={2} enableScrollSpy={true} scrollSpyOnce={true} />
             </div>
             <div className="about-card-description">
-              ЛЕТ НА РЫНКЕ
+            {i18n.Get("company.about.since")}
             </div>
           </div>
           <div className="about-box-info">

@@ -1,3 +1,16 @@
 {
-    
+    "header": {
+        "menu": {
+            "first": "Main",
+            "second": "About Company",
+            "third": "News",
+            "fourth": "Contact us",
+            "secondFirst" : "Products",
+            "secondSecond" : "Technologies",
+            "secondThird" : "Quality",
+            "secondFourth" : "Our Clients",
+            "secondFiveth" : "Supply geography",
+            "secondSixth" : "Career"
+            }
+    }
 }

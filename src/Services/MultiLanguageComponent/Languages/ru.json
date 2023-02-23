@@ -1,3 +1,16 @@
 {
-    
+    "header": {
+        "menu": {
+            "first": "ГЛАВНАЯ",
+            "second": "О КОМПАНИИ",
+            "third": "НОВОСТИ",
+            "fourth": "КОНТАКТ",
+            "secondFirst" : "Продукция",
+            "secondSecond" : "Технологии",
+            "secondThird" : "Качество",
+            "secondFourth" : "Наши Клиенты",
+            "secondFiveth" : "География Поставок",
+            "secondSixth" : "Карьера"
+            }
+    }
 }
