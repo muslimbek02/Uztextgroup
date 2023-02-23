@@ -1,54 +1,52 @@
 import './Footer.css';
+import i18n from '../../Services/MultiLanguageComponent/i18n';
 
 const Footer = () => {
     return (
         <div className="footer-wrapper">
             <div className="footer-top">
                 <div className="footer-item">
-                    <h3 className="footer-head">Navigatsiya</h3>
+                    <h3 className="footer-head">{i18n.Get("footer.navigation")}</h3>
                     <ul>
-                        <li><a href="/">Asosiy</a></li>
-                        <li><a href="/">Yangiliklar</a></li>
-                        <li><a href="/">Kompaniya haqida</a></li>
-                        <li><a href="/">Aloqa</a></li>
+                        <li><a href="/">{i18n.Get("header.menu.first")}</a></li>
+                        <li><a href="/">{i18n.Get("header.menu.third")}</a></li>
+                        <li><a href="/">{i18n.Get("header.menu.second.company")}</a></li>
+                        <li><a href="/">{i18n.Get("header.menu.fourth")}</a></li>
                     </ul>
                 </div>
                 <div className="footer-item">
-                    <h3 className="footer-head">Ishlab chiqarish</h3>
+                    <h3 className="footer-head">{i18n.Get("footer.making.title")}</h3>
                     <ul>
-                        <li><a href="/">Ip</a></li>
-                        <li><a href="/">Mato</a></li>
-                        <li><a href="/">Sochiq Mahsulotlari</a></li>
-                        <li><a href="/">Paypoq</a></li>
-                        <li><a href="/">Tayyor Trikotaj Mahsulotlari</a></li>
-                        <li><a href="/">Aksessuarlar</a></li>
-                        <li><a href="/">"UZTEXPRO" dasturi</a></li>
-                        <li><a href="/">Polipropilen qoplari</a></li>
+                        <li><a href="/">{i18n.Get("contact.section.ip")}</a></li>
+                        <li><a href="/">{i18n.Get("contact.section.mato")}</a></li>
+                        <li><a href="/">{i18n.Get("contact.section.teri")}</a></li>
+                        <li><a href="/">{i18n.Get("contact.section.paypoq")}</a></li>
+                        <li><a href="/">{i18n.Get("contact.section.trikotaj")}</a></li>
+                        <li><a href="/">{i18n.Get("contact.section.aksessuar")}</a></li>
+                        <li><a href="/">{i18n.Get("footer.making.UzExPro")}</a></li>
+                        <li><a href="/">{i18n.Get("footer.making.qop")}</a></li>
                     </ul>
                 </div>
                 <div className="footer-item">
-                    <h3 className="footer-head">Aloqa</h3>
+                    <h3 className="footer-head">{i18n.Get("header.menu.fourth")}</h3>
                     <p>
-                        O'zbekiston Respublikasi, Toshkent viloyati, 
-                        Chirchiq shahri,
-                        Yumalak posyolkasi, 
-                        ko'ch. V. Qodirov, 207 y
+                        {i18n.Get("contact.address")}
                     </p>
                     <p>
                         Tel:<br />
                         <a href="/">+998 (70) 717-19-00</a> <br />
                         <a href="/">+998 (70) 717-00-00</a> <br />
                         <a href="/">+998 (70) 717-00-77</a> <br />
-                        E-mail: <br />
+                        {i18n.Get("contact.email")} : <br />
                         <a href="/">marketing@uztex.uz</a>
                     </p>
                 </div>
                 <div className="footer-item">
-                    <h3 className="footer-head">Axborot byulleteni</h3>
-                    <p>Xabar yuborish uchun elektron pochta manzilingizni kiriting.</p>
+                    <h3 className="footer-head">{i18n.Get("footer.information.title")}</h3>
+                    <p>{i18n.Get("footer.information.message")}</p>
                     <div>
-                        <input type="text" placeholder="E-mail kiriting..."/>
-                        <button className="footer-btn">Obuna Bo'lish</button>
+                        <input type="text" placeholder={i18n.Get("contact.email")}/>
+                        <button className="footer-btn">{i18n.Get("footer.information.subscribe")}</button>
                     </div>
                 </div>
             </div>

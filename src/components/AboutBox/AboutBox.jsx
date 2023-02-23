@@ -24,9 +24,11 @@ const AboutBox = () => {
             <p className="heading-text">{i18n.Get("header.menu.second.company")}</p>
             <div className='about-box-info-title'>«UZTEX GROUP»</div>
             <div className="about-box-info-text">
-              <p></p>
+              <p>{i18n.Get("company.about.textAboutCompany1")}</p>
+              <p>{i18n.Get("company.about.textAboutCompany2")}</p>
+              <p>{i18n.Get("company.about.textAboutCompany3")}</p>
             </div>
-            <Link to='/about' className='about-readmore-link'>BIZ HAQIMIZDA KO'PROQ</Link>
+            <Link to='/about' className='about-readmore-link'>{i18n.Get("company.about.more")}</Link>
           </div>
         </div>
       </div>

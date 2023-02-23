@@ -19,12 +19,47 @@
     "company" : {
         "about" : {
             "since" : "YEARS ON THE MARKET",
-            "textAboutCompany":"UZTEX group of companies is the leading vertically integrated producer of textile products in the CIS countries. Production capacity of UZTEX GROUP allows production of the entire range of cotton textile products: all types of coarse and dyed yarns, coarse and dyed knitted fabric, ready-made knitwear, socks and terry products.
-
-            The history of UZTEX GROUP goes back more than 10 years, when in 2009 the first factory for the production of painted canvas was put into operation.
-            
-
-            Today, the annual production capacity of UZTEX GROUP enterprises located in different regions of the Republic of Uzbekistan is more than 45,000 tons of various types of gray yarn."
+            "textAboutCompany1":"The UZTEX Group of Companies is a leading vertically integrated manufacturer of textile products in the CIS countries. The production facilities of \"UZTEX GROUP\" make it possible to manufacture the whole range of textile products from cotton: all types of coarse and dyed yarn, coarse and dyed knitted fabric, ready-made knitwear, hosiery and terry products",
+            "textAboutCompany2":"The history of \"UZTEX GROUP\" goes back more than 10 years, when in 2009 the first factory for the production of dyed canvas was launched.",
+            "textAboutCompany3":"Today, the annual production capacity of the enterprises of \"UZTEX GROUP\" located in various regions of the Republic of Uzbekistan is more than 45,000 tons of various types of gray yarn.",
+            "more" : "MORE ABOUT US"      
+        }
+    },
+    "contact":{
+        "address" : "Republic of Uzbekistan, Tashkent region, Chirchik city, Yumalak settlement, st. V. Kadyrov, 207 years",
+        "tel":"Tel : ",
+        "email": "E-mail",
+        "fullname":"Full name",
+        "city":"City",
+        "section":{
+            "title":"Choose the section",
+            "marketing":"Marketing department",
+            "teri":"Terry products",
+            "trikotaj":"Finished jerseys",
+            "paypoq":"Hosiery",
+            "mato":"Canvas",
+            "ip":"Yarn",
+            "aksessuar":"Accessories"
+        },
+        "xat":"Your letter",
+        "send":"Send"  
+    },
+    "shortly":{
+        "employees":"THOUSAND EMPLOYEES",
+        "exports":"COUNTRIES OF EXPORT",
+        "factory":"OF LARGE ENTERPRISES ALL OVER UZBEKISTAN"
+    },
+    "footer":{
+        "navigation":"Navigation",
+        "making":{
+            "title":"Manufacture",
+            "UzExPro":"\"UZTEXPRO\" program",
+            "qop":"Polypropylene bags"
+        },
+        "information":{
+            "title":"Newsletter",
+            "message":"Enter your email address to send a message.",
+            "subscribe":"SUBSCRIBE"
         }
     }
 }
