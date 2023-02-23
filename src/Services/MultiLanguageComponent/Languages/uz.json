@@ -2,15 +2,18 @@
     "header": {
         "menu": {
             "first": "Asosiy",
-            "second": "Kompaniya haqida",
+            "second": 
+            {
+                "company" : "Kompaniya haqida",
+                "first" : "Mahsulotlar",
+                "second" : "Texnologiyalar",
+                "third" : "Sifat",
+                "fourth" : "Bizning mijozlarimiz",
+                "fiveth" : "Ta'minot geografiyasi",
+                "sixth" : "Karyera"
+            },
             "third": "Yangiliklar",
-            "fourth": "Aloqa",
-            "secondFirst" : "Mahsulotlar",
-            "secondSecond" : "Texnologiyalar",
-            "secondThird" : "Sifat",
-            "secondFourth" : "Bizning mijozlarimiz",
-            "secondFiveth" : "Ta'minot geografiyasi",
-            "secondSixth" : "Karyera"
+            "fourth": "Aloqa"
             }
     },
     "company" : {

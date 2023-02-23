@@ -2,15 +2,29 @@
     "header": {
         "menu": {
             "first": "Main",
-            "second": "About Company",
+            "second": 
+            {
+                "company" : "About Company",
+                "first" : "Products",
+                "second" : "Technologies",
+                "third" : "Quality",
+                "fourth" : "Our Clients",
+                "fiveth" : "Geography of supplies",
+                "sixth" : "Career"
+            },
             "third": "News",
-            "fourth": "Contact us",
-            "secondFirst" : "Products",
-            "secondSecond" : "Technologies",
-            "secondThird" : "Quality",
-            "secondFourth" : "Our Clients",
-            "secondFiveth" : "Supply geography",
-            "secondSixth" : "Career"
-            }
+            "fourth": "Contact us"
+        }
+    },
+    "company" : {
+        "about" : {
+            "since" : "YEARS ON THE MARKET",
+            "textAboutCompany":"UZTEX group of companies is the leading vertically integrated producer of textile products in the CIS countries. Production capacity of UZTEX GROUP allows production of the entire range of cotton textile products: all types of coarse and dyed yarns, coarse and dyed knitted fabric, ready-made knitwear, socks and terry products.
+
+            The history of UZTEX GROUP goes back more than 10 years, when in 2009 the first factory for the production of painted canvas was put into operation.
+            
+
+            Today, the annual production capacity of UZTEX GROUP enterprises located in different regions of the Republic of Uzbekistan is more than 45,000 tons of various types of gray yarn."
+        }
     }
 }

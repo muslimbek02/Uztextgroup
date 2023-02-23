@@ -35,26 +35,26 @@ const Header = ({ isVisible }) => {
             </li>
             <li className='nvbar-item nvbar-dropdown'>
               <Link to='/about' className='nvbar-link'>
-                {i18n.Get("header.menu.second")}
+                {i18n.Get("header.menu.second.company")}
               </Link>
               <ul className="dropdown-list">
                 <li>
-                  <Link to='/'>{i18n.Get("header.menu.secondFirst")}</Link>
+                  <Link to='/'>{i18n.Get("header.menu.second.first")}</Link>
                 </li>
                 <li>
-                  <Link to='/'>{i18n.Get("header.menu.secondSecond")}</Link>
+                  <Link to='/'>{i18n.Get("header.menu.second.second")}</Link>
                 </li>
                 <li>
-                  <Link to='/quality'>{i18n.Get("header.menu.secondThird")}</Link>
+                  <Link to='/quality'>{i18n.Get("header.menu.second.third")}</Link>
                 </li>
                 <li>
-                  <Link to='/'>{i18n.Get("header.menu.secondFourth")}</Link>
+                  <Link to='/'>{i18n.Get("header.menu.second.fourth")}</Link>
                 </li>
                 <li>
-                  <Link to='/'>{i18n.Get("header.menu.secondFiveth")}</Link>
+                  <Link to='/'>{i18n.Get("header.menu.second.fiveth")}</Link>
                 </li>
                 <li>
-                  <Link to='/jobs'>{i18n.Get("header.menu.secondSixth")}</Link>
+                  <Link to='/jobs'>{i18n.Get("header.menu.second.sixth")}</Link>
                 </li>
               </ul>
             </li>

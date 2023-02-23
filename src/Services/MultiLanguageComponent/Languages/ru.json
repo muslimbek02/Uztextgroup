@@ -2,15 +2,18 @@
     "header": {
         "menu": {
             "first": "ГЛАВНАЯ",
-            "second": "О КОМПАНИИ",
+            "second": 
+            {
+                "company" : "О КОМПАНИИ",
+                "first" : "Продукция",
+                "second" : "Технологии",
+                "third" : "Качество",
+                "fourth" : "Наши Клиенты",
+                "fiveth" : "География Поставок",
+                "sixth" : "Карьера"
+            },
             "third": "НОВОСТИ",
-            "fourth": "КОНТАКТ",
-            "secondFirst" : "Продукция",
-            "secondSecond" : "Технологии",
-            "secondThird" : "Качество",
-            "secondFourth" : "Наши Клиенты",
-            "secondFiveth" : "География Поставок",
-            "secondSixth" : "Карьера"
-            }
+            "fourth": "КОНТАКТ"
+        }
     }
 }
