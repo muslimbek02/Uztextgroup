@@ -7,14 +7,8 @@ const Header = ({ isVisible }) => {
 
   const [isMobile, setIsMobile] = useState(false);
 
-  let changeLanguageCode = (ev) => {
-    let code = ev.target.lang
-    console.log(code); 
-    if (["uz", "en", "ru"].includes(code) && localStorage.getItem("lang") != code) {
-      console.log(code);
-      localStorage.removeItem("lang");
-      localStorage.setItem("lang", code);
-    }
+  let changeLanguageCode = (code) => {
+    i18n.ChangeLanguageCode(code);
     window.location.reload();
   }
   document.body.style.overflow = isMobile ? 'hidden' : '';
@@ -60,8 +54,8 @@ const Header = ({ isVisible }) => {
             </li>
             <li className='nvbar-item'>
               <Link to='/news' className='nvbar-link'>
-                {i18n.Get("header.menu.third")} 
-               </Link>
+                {i18n.Get("header.menu.third")}
+              </Link>
             </li>
             <li className='nvbar-item'>
               <Link to='/contact' className='nvbar-link'>
@@ -70,22 +64,18 @@ const Header = ({ isVisible }) => {
             </li>
           </ul>
           <div className='lang-box'>
-            <Link to='/' lang='uz' onClick={changeLanguageCode} className='lang-link nvbar-dropdown'>
-              <img className='per-lang' src="./images/flag-uzb.jpg" alt="lang-img" />
-              uzb
+            <Link to='/' className='lang-link nvbar-dropdown'>
+              <img className='per-lang' src={`./images/flag-${i18n.activeLanguageCode}.jpg`} alt={`lang-${i18n.activeLanguageCode}`} />
+              {i18n.activeLanguageCode}
               <ul className="dropdown-list dropdown-lang">
-                <li>
-                  <Link to='/' lang='ru' onClick={changeLanguageCode}>
-                    <img className='per-lang' src="./images/flag-rus.png" alt="lang-img" />
-                    Ru
-                  </Link>
-                </li>
-                <li>
-                  <Link to='/' lang='en' onClick={changeLanguageCode}>
-                    <img className='per-lang' src="./images/flag-eng.jpg" alt="lang-img" />
-                    eng
-                  </Link>
-                </li>
+                {i18n.langCodes.filter(x => x !== i18n.activeLanguageCode).map((x, i) => {
+                  return (<li key={i}>
+                    <Link to='/' onClick={changeLanguageCode.bind(this, x)}>
+                      <img className='per-lang' src={`./images/flag-${x}.jpg`} alt={`lang-${x}`} />
+                      {x}
+                    </Link>
+                  </li>)
+                })}
               </ul>
             </Link>
 
