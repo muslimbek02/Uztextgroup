@@ -43,7 +43,7 @@ const ProductsSlider = () => {
           }}
         >
           {
-            productsArr.map(({ product, img }, idx) => (
+            [...i18n.Get("productsArr")].map(({ product, img }, idx) => (
               <div key={product}>
                 <div className="slider-item">
                   <img src={`./images/${img}`} alt={product} />

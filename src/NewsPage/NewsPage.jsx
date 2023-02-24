@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import './newsPage.css'
 import { AiOutlineRight } from 'react-icons/ai'
-import { articleList } from './data'
 import { useState, useEffect } from "react";
 import Block from "../components/Block/block";
 import { FetchService } from '../Services/FetchService';

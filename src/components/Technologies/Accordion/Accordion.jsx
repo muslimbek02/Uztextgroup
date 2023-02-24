@@ -1,6 +1,7 @@
 import { technologies } from '../../../data'
 import { useState } from 'react'
 import AccordionItem from './AccordionItem';
+import i18n from '../../../Services/MultiLanguageComponent/i18n';
 
 const AccordionBox = () => {
   const [active, setActive] = useState(null);
@@ -10,7 +11,7 @@ const AccordionBox = () => {
   }
 
   return (
-    technologies.map((item, idx) => (
+    [...i18n.Get("technologies")].map((item, idx) => (
       <AccordionItem key={idx} item={item} handleClick={handleClick} active={active} />
     ))
   )
