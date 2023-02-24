@@ -65,6 +65,39 @@
             "message":"Xabar yuborish uchun elektron pochta manzilingizni kiriting.",
             "subscribe":"OBUNA BO'LISH"
         }
+    },
+    "application" : {
+        "time" : "Ish vaqti",
+        "salary" : "Maosh",
+        "checkApplication" : "Arizangiz muvoffaqiyatli qabul qilindi!",
+        "name" : "Ismingizni kiriting",
+        "lastName" : "Familiyangizni kiriting",
+        "country" : "Mamlakat",
+        "region" : "Viloyat",
+        "district" : "Tuman",
+        "street" : "Ko'cha",
+        "code" : "Postal kod",
+        "message" : "Xabar"
+    },
+    "job" : {
+        "vacancies": "Bo'sh ish o'rinlari",
+        "sum" : "so'm",
+        "apply" : "Murojaat qilish"
+    },
+    "news" : {
+        "allNews" : "Barcha maqolalarni ko'rish"
+    },
+    "partner" : {
+        "partner" : "Hamkorlar"
+    },
+    "perNumber" : {
+        "perNumber" : "Yillik ishlab chiqarish quvvati"
+    },
+    "productsSlider" : {
+        "productsSlider" : "Bizning ishlab chiqarish",
+        "allInfo" : "Batafsil ma'lumot"
+    },
+    "quality" : {
+        "text" : ""
     }
-
 }

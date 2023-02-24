@@ -1,10 +1,12 @@
 import './PerNumbers.css'
 import { perNumbers } from '../../data'
+import i18n from '../../Services/MultiLanguageComponent/i18n';
+
 const PerNumbers = () => {
   return (
     <div className='per-numbers'>
       <div className="container">
-        <h1 className="per-numbers-title">Yillik ishlab chiqarish quvvati</h1>
+        <h1 className="per-numbers-title">{i18n.Get("perNumber.perNumber")}</h1>
         <div className="per-numbers-inner">
           {
             perNumbers.map((item) => (

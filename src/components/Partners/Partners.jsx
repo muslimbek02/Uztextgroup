@@ -1,10 +1,11 @@
 import './partners.css'
+import i18n from '../../Services/MultiLanguageComponent/i18n';
 
 const Partners = () => {
   return (
     <>
       <div className="container">
-        <h3 className="heading-text">Hamkorlar</h3>
+        <h3 className="heading-text">{i18n.Get("partner.partner")}</h3>
       </div>
       <div className="clients">
         <div className="container">

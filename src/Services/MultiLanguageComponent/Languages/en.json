@@ -61,5 +61,36 @@
             "message":"Enter your email address to send a message.",
             "subscribe":"SUBSCRIBE"
         }
+    },
+    "application" : {
+        "time" : "Work time",
+        "salary" : "Salary",
+        "checkApplication" : "Your application has been successfully received!",
+        "name" : "Enter your firstname",
+        "lastName" : "Enter your lastname",
+        "country" : "Country",
+        "region" : "Region",
+        "district" : "District",
+        "street" : "Street",
+        "code" : "Postal code",
+        "message" : "Message"
+    },
+    "job" : {
+        "vacancies": "Vacancies",
+        "sum" : "sum",
+        "apply" : "Apply"
+    },
+    "news" : {
+        "allNews" : "View all news"
+    },
+    "partner" : {
+        "partner" : "Partners"
+    },
+    "perNumber" : {
+        "perNumber" : "Annual production capacity"
+    },
+    "productsSlider" : {
+        "productsSlider" : "Our production",
+        "allInfo" : "All information"
     }
 }

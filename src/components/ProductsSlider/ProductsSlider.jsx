@@ -5,11 +5,13 @@ import { ReactComponent as Next } from './Icons/next-btn-img.svg'
 import { ReactComponent as Prev } from './Icons/prev-btn-img.svg'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './ProductsSlider.css'
+import i18n from '../../Services/MultiLanguageComponent/i18n';
+
 const ProductsSlider = () => {
 
   return (
     <div className='products' id='products'>
-      <h2>Bizning ishlab chiqarish</h2>
+      <h2>{i18n.Get("productsSlider.productsSlider")}</h2>
       <div className="carousel-product">
         <Carousel
           showArrows={false}
@@ -46,9 +48,9 @@ const ProductsSlider = () => {
                 <div className="slider-item">
                   <img src={`./images/${img}`} alt={product} />
                   <div className="slider-content">
-                    <p className="slider-content-type">Mahsulotlar</p>
+                    <p className="slider-content-type">{i18n.Get("header.menu.second.first")}</p>
                     <h1 className="slider-content-title">{product}</h1>
-                    <a href="/" className='slider-content-btn'>BATAFSIL MA'LUMOT</a>
+                    <a href="/" className='slider-content-btn'>{i18n.Get("productsSlider.allInfo")}</a>
                   </div>
                 </div>
               </div>

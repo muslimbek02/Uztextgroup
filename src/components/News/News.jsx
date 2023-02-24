@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FetchService } from '../../Services/FetchService';
 import Block from "../Block/block";
 import './News.css';
-
+import i18n from '../../Services/MultiLanguageComponent/i18n';
 
 const News = () => {
     const [apiNews, setApiNews] = useState([]);
@@ -22,8 +22,8 @@ const News = () => {
             <Block state={isLoading} />
             <div className="container">
                 <div className="news-top">
-                    <span className='news-title'>Yangiliklar</span>
-                    <Link to="/news" className='all-article'>Barcha maqolalarni ko'rish</Link>
+                    <span className='news-title'>{i18n.Get("header.menu.third")}</span>
+                    <Link to="/news" className='all-article'>{i18n.Get("news.allNews")}</Link>
                 </div>
             </div>
             <div className="news-card">
@@ -39,7 +39,7 @@ const News = () => {
                                         />
                                         <div className='news-content'>
                                             <div className="news-footer">
-                                                <span className="news-category">Yangiliklar</span>
+                                                <span className="news-category">{i18n.Get("header.menu.third")}</span>
                                                 <span className="news-date">{new Date(news.date).toLocaleDateString()}</span>
                                             </div>
                                             <span className="post-title">
