@@ -3,6 +3,7 @@ import './header.css'
 import { AiOutlineClose } from 'react-icons/ai'
 import { useState } from 'react';
 import i18n from '../../Services/MultiLanguageComponent/i18n';
+
 const Header = ({ isVisible }) => {
 
   const [isMobile, setIsMobile] = useState(false);

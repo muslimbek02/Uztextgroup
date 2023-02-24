@@ -5,7 +5,8 @@ import { articleList } from './data'
 import { useState, useEffect } from "react";
 import Block from "../components/Block/block";
 import { FetchService } from '../Services/FetchService';
-import NewsDetails from '../components/NewsDetails/NewsDetails';
+import i18n from '../Services/MultiLanguageComponent/i18n';
+
 const NewsPage = () => {
   const [apiNews, setApiNews] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -23,7 +24,7 @@ const NewsPage = () => {
       <div className="header-back"></div>
       <div className="news-page-heading">
         <div className="container">
-          <p className='news-heading-text'>So'ngi yangiliklar</p>
+          <p className='news-heading-text'>{i18n.Get("news.lastNews")}</p>
           <div className="news-article-list">
             {
               apiNews.map((news, index) => (
@@ -35,7 +36,7 @@ const NewsPage = () => {
                         alt={news.title} />
                     </div>
                     <div className="news-article-body">
-                      <p className="article-date">Yangiliklar <span>{new Date(news.date).toLocaleDateString()}</span></p>
+                      <p className="article-date">{i18n.Get("header.menu.third")} <span>{new Date(news.date).toLocaleDateString()}</span></p>
                       <p className="article-title-text">
                         {news.title}
                       </p>
