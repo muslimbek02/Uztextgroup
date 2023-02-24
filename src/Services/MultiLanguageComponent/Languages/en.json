@@ -123,65 +123,65 @@
     },
     "perNumbers": [
         {
-            "number": "7000 tonna",
-            "text": "Bo'yalgan trikotaj mato"
+            "number": "7000 tons",
+            "text": "Dyed knitted fabric"
         },
         {
-            "number": "2500 tonna",
-            "text": "Matoni va tuvali aylanadigan bosma"
+            "number": "2500 tons",
+            "text": "Fabric and canvas rotary printing"
         },
         {
-            "number": "20 million dona",
-            "text": "Tayyor liboslar"
+            "number": "20 million pieces",
+            "text": "Ready-made clothes"
         },
         {
-            "number": "18000 tonna",
-            "text": "Ip bo'yalgan"
+            "number": "18000 tons",
+            "text": "Thread dyed"
         },
         {
-            "number": "70 million juftlik",
-            "text": "Paypoq"
+            "number": "70 million pairs",
+            "text": "Socks"
         },
         {
-            "number": "12 million dona",
-            "text": "Terri mahsulotlari"
+            "number": "12 million pieces",
+            "text": "Leather products"
         },
         {
-            "number": "7000 tonna",
-            "text": "Bo'yalgan paxta tolasi"
+            "number": "7000 tons",
+            "text": "Dyed cotton fiber"
         }
     ],
     "productsArr" : [
         {
-          "product": "Ip",
+          "product": "Thread",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "Mato",
+          "product": "Fabric",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "Sochiq Mahsulotlari",
+          "product": "Towel Products",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "Paypoq",
+          "product": "Socks",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "Tayyor Trikotaj Mahsulotlari",
+          "product": "Ready-made knitted products",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "Aksessuarlar",
+          "product": "Accessories",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "\"UZTEXPRO\" dasturi",
+          "product": "\"UZTEXPRO\" program",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "Polipropilen qoplari",
+          "product": "Polypropylene bags",
           "img": "slider-ip.jpg"
         }
       ],
@@ -192,15 +192,15 @@
         },
         {
             "id": 2,
-            "title": "Matolarni bo'yash texnologiyasi"
+            "title": "Fabric dyeing technology"
         },
         {
             "id": 3,
-            "title": "Aylanma bosib chiqarish texnologiyasi"
+            "title": "Rotary printing technology"
         },
         {
             "id": 4,
-            "title": "Tayyor mahsulotlarni tikish"
+            "title": "Sewing finished products"
         }
     ]
 

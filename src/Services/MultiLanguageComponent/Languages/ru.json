@@ -120,84 +120,84 @@
     },
     "perNumbers": [
         {
-            "number": "7000 tonna",
-            "text": "Bo'yalgan trikotaj mato"
+            "number": "7000 тонн",
+            "text": "Крашеный трикотаж"
         },
         {
-            "number": "2500 tonna",
-            "text": "Matoni va tuvali aylanadigan bosma"
+            "number": "2500 тонн",
+            "text": "Ротационная печать на ткани и холсте"
         },
         {
-            "number": "20 million dona",
-            "text": "Tayyor liboslar"
+            "number": "20 миллионов единиц",
+            "text": "Готовая одежда"
         },
         {
-            "number": "18000 tonna",
-            "text": "Ip bo'yalgan"
+            "number": "18000 тонн",
+            "text": "Нить окрашена"
         },
         {
-            "number": "70 million juftlik",
-            "text": "Paypoq"
+            "number": "70 миллионов пар",
+            "text": "Носки"
         },
         {
-            "number": "12 million dona",
-            "text": "Terri mahsulotlari"
+            "number": "12 миллионов единиц",
+            "text": "Кожаные изделия"
         },
         {
-            "number": "7000 tonna",
-            "text": "Bo'yalgan paxta tolasi"
+            "number": "7000 тонн",
+            "text": "Крашеное хлопковое волокно"
         }
     ],
     "productsArr" : [
         {
-          "product": "Ip",
+          "product": "Нить",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "Mato",
+          "product": "Ткань",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "Sochiq Mahsulotlari",
+          "product": "Полотенце Продукты",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "Paypoq",
+          "product": "Носки",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "Tayyor Trikotaj Mahsulotlari",
+          "product": "Готовые вязаные изделия",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "Aksessuarlar",
+          "product": "Аксессуары",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "\"UZTEXPRO\" dasturi",
+          "product": "\"UZTEXPRO\" программа",
           "img": "slider-ip.jpg"
         },
         {
-          "product": "Polipropilen qoplari",
+          "product": "Мешки полипропиленовые",
           "img": "slider-ip.jpg"
         }
       ],
       "technologies": [
         {
             "id": 1,
-            "title": "Iplarni bo'yash texnologiyasi"
+            "title": "Технология окрашивания нити"
         },
         {
             "id": 2,
-            "title": "Matolarni bo'yash texnologiyasi"
+            "title": "Технология окрашивания ткани"
         },
         {
             "id": 3,
-            "title": "Aylanma bosib chiqarish texnologiyasi"
+            "title": "Технология ротационной печати"
         },
         {
             "id": 4,
-            "title": "Tayyor mahsulotlarni tikish"
+            "title": "Пошив готовых изделий"
         }
     ]
 }
