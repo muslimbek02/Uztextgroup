@@ -53,7 +53,7 @@ const News = () => {
                             ))
                         }
                     </div>
-                    : <h1 style={{textAlign: 'center'}}>Yangiliklar topilmadi!</h1>
+                    : <h1 style={{textAlign: 'center'}}>{i18n.Get("news.NoNewsFound")}</h1>
                     }
                     
                 </div>

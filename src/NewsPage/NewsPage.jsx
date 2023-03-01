@@ -45,7 +45,7 @@ const NewsPage = () => {
                         {news.description}
                       </p>
                       <Link to={`/news-detail/${encodeURI(JSON.stringify(news))}`} className='article-more-btn'>
-                        <span>BATAFSIL</span> <AiOutlineRight />
+                        <span>{i18n.Get("news.more")}</span> <AiOutlineRight />
                       </Link>
                     </div>
                   </Link>
@@ -54,7 +54,7 @@ const NewsPage = () => {
             }
           </div>
           : 
-          <h1 style={{textAlign: 'center'}}>Yangiliklar topilmadi!</h1>
+          <h1 style={{textAlign: 'center'}}>{i18n.Get("news.NoNewsFound")}</h1>
           }
         </div>
       </div>

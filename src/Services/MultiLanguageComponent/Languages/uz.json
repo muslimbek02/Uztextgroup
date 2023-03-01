@@ -87,7 +87,9 @@
     },
     "news": {
         "allNews": "Barcha maqolalarni ko'rish",
-        "lastNews": "So'nggi Yangiliklar"
+        "lastNews": "So'nggi Yangiliklar",
+        "NoNewsFound": "Yangiliklar topilmadi!",
+        "more":"Batafsil"
     },
     "partner": {
         "partner": "Hamkorlar"

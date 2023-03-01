@@ -84,7 +84,9 @@
     },
     "news" : {
         "allNews" : "View all news",
-        "lastNews" : "Latest News"
+        "lastNews" : "Latest News",
+        "NoNewsFound": "No news found!",
+        "more":"More"
     },
     "partner" : {
         "partner" : "Partners"
