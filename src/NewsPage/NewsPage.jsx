@@ -45,7 +45,7 @@ const NewsPage = () => {
                         {news.description}
                       </p>
                       <Link to={`/news-detail/${encodeURI(JSON.stringify(news))}`} className='article-more-btn'>
-                        <span>Batafsil</span> <AiOutlineRight />
+                        <span>BATAFSIL</span> <AiOutlineRight />
                       </Link>
                     </div>
                   </Link>
