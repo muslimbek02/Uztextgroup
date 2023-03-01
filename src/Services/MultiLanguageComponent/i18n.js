@@ -5,23 +5,20 @@ const en = require("./Languages/en.json");
 class I18n {
     allResources = {};
     langCodes = [];
-    activeLanguageCode = localStorage.getItem("lang");
-    
+    get activeLanguageCode() {
+        return localStorage.getItem("lang") ?? this.langCodes[0];
+    }
     AddResource(langCode, json) {
         this.langCodes.push(langCode);
         this.allResources[langCode] = json;
     }
     #GetResource() {
-        const langCode = window.localStorage.getItem('lang');
-        if (!this.langCodes.includes(langCode))
-            return "No Content";
-        return this.allResources[langCode];
+        return this.allResources[this.activeLanguageCode];
     }
-    ChangeLanguageCode(langCode = this.langCodes[0]) {
-        if (this.langCodes.includes(langCode) && window.localStorage.getItem("lang") !== langCode) {
+    ChangeLanguageCode(langCode) {
+        if (langCode && this.langCodes.includes(langCode) && langCode !== this.activeLanguageCode) {
             localStorage.removeItem("lang");
             localStorage.setItem("lang", langCode);
-            this.activeLanguageCode = langCode;
         }
     }
     Get(key) {
@@ -47,4 +44,5 @@ const i18n = new I18n();
 i18n.AddResource('uz', uz);
 i18n.AddResource('en', en);
 i18n.AddResource('ru', ru);
+
 export default i18n;
