@@ -18,7 +18,7 @@ const Header = ({ isVisible }) => {
       <div className={`header ${isVisible ? 'is_sticky' : ''}`}>
         <div className="header-logo">
           <Link to='/'>
-            <img src="./images/logo.png" alt="logo" />
+            <img src="/images/logo.png" alt="logo" />
           </Link>
         </div>
         <div className="nvbar-wrapper">
@@ -66,13 +66,13 @@ const Header = ({ isVisible }) => {
           </ul>
           <div className='lang-box'>
             <Link to='/' className='lang-link nvbar-dropdown'>
-              <img className='per-lang' src={`./images/flag-${i18n.activeLanguageCode}.jpg`} alt={`lang-${i18n.activeLanguageCode}`} />
+              <img className='per-lang' src={`/images/flag-${i18n.activeLanguageCode}.jpg`} alt={`lang-${i18n.activeLanguageCode}`} />
               {i18n.activeLanguageCode}
               <ul className="dropdown-list dropdown-lang">
                 {i18n.langCodes.filter(x => x !== i18n.activeLanguageCode).map((x, i) => {
                   return (<li key={i}>
                     <Link to='/' onClick={changeLanguageCode.bind(this, x)}>
-                      <img className='per-lang' src={`./images/flag-${x}.jpg`} alt={`lang-${x}`} />
+                      <img className='per-lang' src={`/images/flag-${x}.jpg`} alt={`lang-${x}`} />
                       {x}
                     </Link>
                   </li>)

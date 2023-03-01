@@ -24,7 +24,9 @@ const NewsPage = () => {
       <div className="news-page-heading">
         <div className="container">
           <p className='news-heading-text'>{i18n.Get("news.lastNews")}</p>
-          <div className="news-article-list">
+          {
+            apiNews.length ? 
+            <div className="news-article-list">
             {
               apiNews.map((news, index) => (
                 <div className="news-article-item" key={news.id}>
@@ -51,6 +53,9 @@ const NewsPage = () => {
               ))
             }
           </div>
+          : 
+          <h1 style={{textAlign: 'center'}}>Yangiliklar topilmadi!</h1>
+          }
         </div>
       </div>
     </div>

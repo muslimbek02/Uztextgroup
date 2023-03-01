@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom"
 import { Link } from 'react-router-dom'
 import './NewsDetails.css'
-import { articleList } from "../../NewsPage/data";
 import { useState, useEffect } from "react";
 import Block from "../Block/block";
 import { FetchService } from '../../Services/FetchService';

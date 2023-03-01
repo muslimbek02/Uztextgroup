@@ -28,11 +28,13 @@ const News = () => {
             </div>
             <div className="news-card">
                 <div className="container">
-                    <div className="news-cards">
+                    {
+                        apiNews.length ? 
+                        <div className="news-cards">
                         {
                             apiNews?.map((news) => (
                                 <div className="card-item" key={news.id}>
-                                    <Link to={`/news-detail/${encodeURI(JSON.stringify(news))}`}>
+                                    <Link to={`news-detail/${encodeURI(JSON.stringify(news))}`}>
                                         <img
                                             src={`${FetchService.axios.defaults.baseURL}/uploads/${news.id}${localStorage.getItem("lang") ?? "uz"}.jpg`}
                                             alt=""
@@ -51,6 +53,9 @@ const News = () => {
                             ))
                         }
                     </div>
+                    : <h1 style={{textAlign: 'center'}}>Yangiliklar topilmadi!</h1>
+                    }
+                    
                 </div>
             </div>
         </div >

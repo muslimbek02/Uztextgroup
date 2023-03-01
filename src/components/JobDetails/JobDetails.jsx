@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { FetchService } from '../../Services/FetchService';
-import dot, { object } from "dot-object";
+import dot from "dot-object";
 import { ToastContainer, toast } from "react-toastify";
 import './job-details.css'
-import { AxiosResponse, formToJSON } from "axios";
 import Block from '../Block/block';
 import i18n from '../../Services/MultiLanguageComponent/i18n';
 
@@ -20,7 +19,7 @@ const JobDetails = () => {
     const postData = dot.object(Object.fromEntries(formData.entries()));
     FetchService.PostAsync("/api/application/", postData)
       .then(res => {
-        toast(i18n.Get("application.checkApplication") , { type: "success" });
+        toast(i18n.Get("application.checkApplication"), { type: "success" });
         form.reset();
       })
       .catch(err => {
@@ -38,7 +37,7 @@ const JobDetails = () => {
   }
   return (
     <div className="job-details-wrapper">
-      <Block state={isLoading}/>
+      <Block state={isLoading} />
       <div className="header-back"></div>
       <div className="container">
         <div className="job-details-box">
@@ -97,8 +96,10 @@ const JobDetails = () => {
                 <input type="number" placeholder='30' name='createAddressDto.postalCode' />
               </div>
             </div>
-            <label htmlFor='applicationMessage'>{i18n.Get('application.message')}</label>
-            <textarea name='applicationMassage' id='applicationMessage'></textarea>
+            <div className="app-message-box">
+              <label htmlFor='applicationMessage'>{i18n.Get('application.message')}</label>
+              <textarea placeholder={i18n.Get('application.message')} rows={"5"} name='applicationMassage' id='applicationMessage'></textarea>
+            </div>
             <button type='submit' className='job-submit-btn'>{i18n.Get('contact.send')}</button>
           </form>
         </div>

@@ -26,7 +26,9 @@ const Jobs = () => {
         <div className="jobs-heading-text">
           <h2>{i18n.Get("job.vacancies")}</h2>
         </div>
-        <div className="jobs-card-list">
+        {
+          jobs.length ? 
+          <div className="jobs-card-list">
           {
             jobs.map(job => {
               return (<div className="jobs-card-item" key={job.id}>
@@ -45,6 +47,10 @@ const Jobs = () => {
             })
           }
         </div>
+        :
+        <h1 style={{textAlign: 'center', margin: '100px'}}>Hozirda bo'sh ish o'rinlari yo'q!</h1>
+        }
+        
       </div>
     </div>
   )

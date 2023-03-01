@@ -66,6 +66,28 @@
   width: 100%;
 }
 
+.app-message-box label{
+  margin-top: 30px;
+}
+
+.app-message-box textarea {
+  width: 66%;
+  padding: 25px;
+}
+
+@media only screen and (max-width: 1159px){
+  .app-message-box textarea {
+    width: 48.5%;
+  }
+}
+
+@media only screen and (max-width: 992px){
+  .app-message-box textarea {
+    width: 100%;
+  }
+}
+
+
 .job-submit-btn {
   padding: 10px 35px;
   margin-top: 30px;
