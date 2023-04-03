@@ -27,7 +27,6 @@ const NewsPage = () => {
           {
             apiNews.length ? 
             <div className="news-article-list">
-            {
               apiNews.map((news, index) => (
                 <div className="news-article-item" key={news.id}>
                   <Link to={`/news-detail/${encodeURI(JSON.stringify(news))}`} className='article-link'>
