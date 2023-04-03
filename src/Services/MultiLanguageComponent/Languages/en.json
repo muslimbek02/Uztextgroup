@@ -1,0 +1,209 @@
+{
+    "header": {
+        "menu": {
+            "first": "Main",
+            "second": 
+            {
+                "company" : "About Company",
+                "first" : "Products",
+                "second" : "Technologies",
+                "third" : "Quality",
+                "fourth" : "Our Clients",
+                "fiveth" : "Geography of supplies",
+                "sixth" : "Career"
+            },
+            "third": "News",
+            "fourth": "Contact us"
+        }
+    },
+    "company" : {
+        "about" : {
+            "since" : "YEARS ON THE MARKET",
+            "textAboutCompany1":"The UZTEX Group of Companies is a leading vertically integrated manufacturer of textile products in the CIS countries. The production facilities of \"UZTEX GROUP\" make it possible to manufacture the whole range of textile products from cotton: all types of coarse and dyed yarn, coarse and dyed knitted fabric, ready-made knitwear, hosiery and terry products",
+            "textAboutCompany2":"The history of \"UZTEX GROUP\" goes back more than 10 years, when in 2009 the first factory for the production of dyed canvas was launched.",
+            "textAboutCompany3":"Today, the annual production capacity of the enterprises of \"UZTEX GROUP\" located in various regions of the Republic of Uzbekistan is more than 45,000 tons of various types of gray yarn.",
+            "more" : "MORE ABOUT US" ,
+            "allText":"The textile industry of Uzbekistan is constantly developing, offers consumers high-quality modern products and is of strategic importance for the economy of Uzbekistan. Now the demand for textile products in the world market, its importance and role for the economy of production-oriented countries are compared with the positions of oil. Until recently, our country exported raw cotton. Gradually, introducing new technologies and processes, they switched to the production of cotton fiber, and its export share is decreasing every year, and by 2021, Uzbekistan will stop exporting its products in favor of full processing and production of finished products. plans to completely stop it. Textiles, as well as basic raw materials such as oil and gas, are widely used in the production of global consumer goods, without which our lives cannot be imagined. The prosperity of this industry is also helped by the presence of rich natural resources of Uzbekistan, which are provided with environmentally friendly, 100% natural raw materials, as well as light industry, in particular, textiles, which have been created over the years. State and private enterprises with equipment and production capacity that meet all world standards allow to raise Uzbek textile products to the level of a strategic resource that affects world markets. Today, more than 7,000 light industrial enterprises are operating in Uzbekistan. Among them, the company \"UZTEX GROUP\" is the leading, vertically integrated leader of textile products in the CIS countries. Production capacity of \"UZTEX GROUP\" allows production of all types of textile products from cotton: various types of solid and dyed yarns, solid and dyed fabrics, ready-made knitwear, socks, terry products. 11 years ago, our company launched the first factory for the production of painted canvas \"UZTEX CHIRCHIK\", because we support business initiatives, in particular, tax and customs benefits, lending on preferential terms, etc. , has become a powerful production group consisting of 13 factories located throughout Uzbekistan. Therefore, our enterprises are developing their potential in the field of processing and production of finished products, which, in turn, in accordance with the decision of the President of the Republic of Uzbekistan \"On further development measures\", instills confidence in tasks. promotion of light industry and the production of finished products \"and we decide to move from cotton raw materials to the process of exporting already processed cotton fiber and finished products.The textile industry of Uzbekistan is constantly developing, offers consumers high-quality modern products and is of strategic importance for the economy of Uzbekistan. Now the demand for textile products in the world market, its importance and role for the economy of production-oriented countries are compared with the positions of oil. Until recently, our country exported raw cotton. Gradually, introducing new technologies and processes, they switched to the production of cotton fiber, and its export share is decreasing every year, and by 2021, Uzbekistan will stop exporting its products in favor of full processing and production of finished products. plans to stop altogether. Textiles, as well as basic raw materials such as oil and gas, are widely used in the production of global consumer goods, without which our life is unimaginable. The prosperity of this industry is also helped by the presence of rich natural resources of Uzbekistan, which are provided with environmentally friendly, 100% natural raw materials, as well as light industry, in particular, textiles, which have been created over the years. State and private enterprises with equipment and production capacity that meet all world standards allow to raise Uzbek textile products to the level of a strategic resource that affects world markets. Today, more than 7,000 light industrial enterprises are operating in Uzbekistan. Among them, the company \"UZTEX GROUP\" is the leading, vertically integrated leader of textile products in the CIS countries. Production capacity of \"UZTEX GROUP\" allows production of a whole range of cotton textile products: all types of solid and dyed yarns, solid and dyed fabrics, ready-made knitwear, socks, terry products. 11 years ago, our company launched the first factory for the production of painted canvas \"UZTEX CHIRCHIK\", because we support business initiatives, in particular, tax and customs benefits, lending on preferential terms, etc. , has become a powerful production group consisting of 13 factories located throughout Uzbekistan. Therefore, our enterprises are gaining strength, opening up huge potential in the field of processing and production of finished products.",
+            "allTextTitle":"TEXTILE INDUSTRY IN UZBEKISTAN"     
+        }
+    },
+    "contact":{
+        "address" : "Republic of Uzbekistan, Tashkent region, Chirchik city, Yumalak settlement, st. V. Kadyrov, 207 years",
+        "tel":"Tel : ",
+        "email": "E-mail",
+        "fullname":"Full name",
+        "city":"City",
+        "section":{
+            "title":"Choose the section",
+            "marketing":"Marketing department",
+            "teri":"Terry products",
+            "trikotaj":"Finished jerseys",
+            "paypoq":"Hosiery",
+            "mato":"Canvas",
+            "ip":"Yarn",
+            "aksessuar":"Accessories"
+        },
+        "xat":"Your letter",
+        "send":"Send"  
+    },
+    "shortly":{
+        "employees":"THOUSAND EMPLOYEES",
+        "exports":"COUNTRIES OF EXPORT",
+        "factory":"OF LARGE ENTERPRISES ALL OVER UZBEKISTAN"
+    },
+    "footer":{
+        "navigation":"Navigation",
+        "making":{
+            "title":"Manufacture",
+            "UzExPro":"\"UZTEXPRO\" program",
+            "qop":"Polypropylene bags"
+        },
+        "information":{
+            "title":"Newsletter",
+            "message":"Enter your email address to send a message.",
+            "subscribe":"SUBSCRIBE"
+        }
+    },
+    "application" : {
+        "time" : "Work time",
+        "salary" : "Salary",
+        "checkApplication" : "Your application has been successfully received!",
+        "name" : "Enter your firstname",
+        "lastName" : "Enter your lastname",
+        "country" : "Country",
+        "region" : "Region",
+        "district" : "District",
+        "street" : "Street",
+        "code" : "Postal code",
+        "message" : "Message"
+    },
+    "job" : {
+        "vacancies": "Vacancies",
+        "sum" : "sum",
+        "apply" : "Apply"
+    },
+    "news" : {
+        "allNews" : "View all news",
+        "lastNews" : "Latest News",
+        "NoNewsFound": "No news found!",
+        "more":"More"
+    },
+    "partner" : {
+        "partner" : "Partners"
+    },
+    "perNumber" : {
+        "perNumber" : "Annual production capacity"
+    },
+    "productsSlider" : {
+        "productsSlider" : "Our production",
+        "allInfo" : "All information"
+    },
+    "quality" : {
+        "text" : "UZTEX GROUP enterprises have laboratory and testing equipment from leading European manufacturers. The yarn is tested and tested for breaking loads on modern equipment from USTER (Switzerland). In the production and dyeing of the fabric, the most modern testing technologies are used, which allow testing for color fastness under 50 times the load, including washing and ironing, as well as testing products for resistance to ultraviolet radiation and wear.The undoubted quality of the yarn is confirmed by international certificates: USTERIZED, Oeko-Tex standard 100, ISO 9001:2008. (Switzerland). The Swiss HOHENSTEIN Institute, after conducting a technological audit, gave a positive opinion on UZTEX products, and the company was joined to the international community of manufacturers who use only environmentally friendly and safe materials that meet the high European requirements reflected in the OEKO-TEX STANDARD 100. Products of UZTEX enterprises has a certificate of this standard 1 class.",
+        "certificate" : "Certificates"
+    },
+    "technology":{
+        "title":"Technologies"
+    },
+    "conference":{
+        "title":"EXHIBITIONS AND CONFERENCES",
+        "conference1":"International exhibition of textile fibers, threads, yarn",
+        "conference2":"International Exhibition of Textile and Fashion Industry",
+        "conference3":"National Dog Show in Minsk",
+        "conference4":"International Home Textile Exhibition",
+        "conference5":"52nd Federal Fair",
+        "conference6":"International exhibition in the field of children's and youth fashion",
+        "conference7":"15th Central Asian International Specialized Exhibition",
+        "conference8":"International Home Textile Exhibition",
+        "conference9":"Asian Home Textile Exhibition",
+        "conference10":"14th International Exhibition of Textile and Fashion Industry",
+        "conference11":"First business forum",
+        "conference12":"XII International Uzbek Cotton and Textile Fair"
+
+
+
+    },
+    "perNumbers": [
+        {
+            "number": "7000 tons",
+            "text": "Dyed knitted fabric"
+        },
+        {
+            "number": "2500 tons",
+            "text": "Fabric and canvas rotary printing"
+        },
+        {
+            "number": "20 million pieces",
+            "text": "Ready-made clothes"
+        },
+        {
+            "number": "18000 tons",
+            "text": "Thread dyed"
+        },
+        {
+            "number": "70 million pairs",
+            "text": "Socks"
+        },
+        {
+            "number": "12 million pieces",
+            "text": "Leather products"
+        },
+        {
+            "number": "7000 tons",
+            "text": "Dyed cotton fiber"
+        }
+    ],
+    "productsArr" : [
+        {
+          "product": "Thread",
+          "img": "slider-ip.jpg"
+        },
+        {
+          "product": "Fabric",
+          "img": "slider-ip.jpg"
+        },
+        {
+          "product": "Towel Products",
+          "img": "slider-ip.jpg"
+        },
+        {
+          "product": "Socks",
+          "img": "slider-ip.jpg"
+        },
+        {
+          "product": "Ready-made knitted products",
+          "img": "slider-ip.jpg"
+        },
+        {
+          "product": "Accessories",
+          "img": "slider-ip.jpg"
+        },
+        {
+          "product": "\"UZTEXPRO\" program",
+          "img": "slider-ip.jpg"
+        },
+        {
+          "product": "Polypropylene bags",
+          "img": "slider-ip.jpg"
+        }
+      ],
+      "technologies": [
+        {
+            "id": 1,
+            "title": "Thread dyeing technology"
+        },
+        {
+            "id": 2,
+            "title": "Fabric dyeing technology"
+        },
+        {
+            "id": 3,
+            "title": "Rotary printing technology"
+        },
+        {
+            "id": 4,
+            "title": "Sewing finished products"
+        }
+    ]
+
+}

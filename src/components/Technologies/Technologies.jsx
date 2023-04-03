@@ -2,6 +2,8 @@ import { useState } from 'react';
 import AccordionBox from './Accordion/Accordion';
 import  './Technologies.css'
 import {GrClose} from 'react-icons/gr'
+import i18n from '../../Services/MultiLanguageComponent/i18n';
+
 const Technologies = () => {
   const [isModal, setIsModal] = useState(false);
 
@@ -23,7 +25,7 @@ const Technologies = () => {
         </iframe>
       </div>
       <div className="container">
-        <div className="heading-text">Texnologiyalar</div>
+        <div className="heading-text">{i18n.Get("technology.title")}</div>
         <div className="techno-wrapper">
           <div className="collapse-list">
             <AccordionBox />

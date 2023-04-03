@@ -2,16 +2,20 @@ import { Link } from 'react-router-dom'
 import './header.css'
 import { AiOutlineClose } from 'react-icons/ai'
 import { useState } from 'react';
+import i18n from '../../Services/MultiLanguageComponent/i18n';
 
 const Header = ({ isVisible }) => {
 
   const [isMobile, setIsMobile] = useState(false);
-  
-  document.body.style.overflow = isMobile ? 'hidden' : '';
 
+  let changeLanguageCode = (code) => {
+    i18n.ChangeLanguageCode(code);
+    window.location.reload();
+  }
+  document.body.style.overflow = isMobile ? 'hidden' : '';
   return (
     <>
-      <div className={`header ${isVisible ? 'is_sticky' : ''}` }>
+      <div className={`header ${isVisible ? 'is_sticky' : ''}`}>
         <div className="header-logo">
           <Link to='/'>
             <img src="/images/logo.png" alt="logo" />
@@ -21,62 +25,58 @@ const Header = ({ isVisible }) => {
           <ul className="nvbar">
             <li className='nvbar-item'>
               <Link to='/' className='nvbar-link'>
-                ASOSIY
+                {i18n.Get('header.menu.first')}
               </Link>
             </li>
             <li className='nvbar-item nvbar-dropdown'>
               <Link to='/about' className='nvbar-link'>
-                KOMPANIYA HAQIDA
+                {i18n.Get("header.menu.second.company")}
               </Link>
               <ul className="dropdown-list">
                 <li>
-                  <Link to='/'>Mahsulotlar</Link>
+                  <Link to='/'>{i18n.Get("header.menu.second.first")}</Link>
                 </li>
                 <li>
-                  <Link to='/'>Texnologiyalar</Link>
+                  <Link to='/'>{i18n.Get("header.menu.second.second")}</Link>
                 </li>
                 <li>
-                  <Link to='/quality'>Sifat</Link>
+                  <Link to='/quality'>{i18n.Get("header.menu.second.third")}</Link>
                 </li>
                 <li>
-                  <Link to='/'>Bizning mijozlarimiz</Link>
+                  <Link to='/'>{i18n.Get("header.menu.second.fourth")}</Link>
                 </li>
                 <li>
-                  <Link to='/'>Ta'minot geografiyasi</Link>
+                  <Link to='/'>{i18n.Get("header.menu.second.fiveth")}</Link>
                 </li>
                 <li>
-                  <Link to='/jobs'>Karyera</Link>
+                  <Link to='/jobs'>{i18n.Get("header.menu.second.sixth")}</Link>
                 </li>
               </ul>
             </li>
             <li className='nvbar-item'>
               <Link to='/news' className='nvbar-link'>
-                YANGILIKLAR
+                {i18n.Get("header.menu.third")}
               </Link>
             </li>
             <li className='nvbar-item'>
               <Link to='/contact' className='nvbar-link'>
-                ALOQA
+                {i18n.Get("header.menu.fourth")}
               </Link>
             </li>
           </ul>
           <div className='lang-box'>
             <Link to='/' className='lang-link nvbar-dropdown'>
-              <img className='per-lang' src="/images/flag-uzb.jpg" alt="lang-img" />
-              uzb
+              <img className='per-lang' src={`/images/flag-${i18n.activeLanguageCode}.jpg`} alt={`lang-${i18n.activeLanguageCode}`} />
+              {i18n.activeLanguageCode}
               <ul className="dropdown-list dropdown-lang">
-                <li>
-                  <Link to='/'>
-                    <img className='per-lang' src="/images/flag-rus.png" alt="lang-img" />
-                    Ru
-                  </Link>
-                </li>
-                <li>
-                  <Link to='/'>
-                    <img className='per-lang' src="/images/flag-eng.jpg" alt="lang-img" />
-                    eng
-                  </Link>
-                </li>
+                {i18n.langCodes.filter(x => x !== i18n.activeLanguageCode).map((x, i) => {
+                  return (<li key={i}>
+                    <Link to='/' onClick={changeLanguageCode.bind(this, x)}>
+                      <img className='per-lang' src={`/images/flag-${x}.jpg`} alt={`lang-${x}`} />
+                      {x}
+                    </Link>
+                  </li>)
+                })}
               </ul>
             </Link>
 

@@ -1,11 +1,10 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { FetchService } from '../../Services/FetchService';
-import dot, { object } from "dot-object";
+import dot from "dot-object";
 import { ToastContainer, toast } from "react-toastify";
 import './job-details.css'
-import { AxiosResponse, formToJSON } from "axios";
 import Block from '../Block/block';
-
+import i18n from '../../Services/MultiLanguageComponent/i18n';
 
 const JobDetails = () => {
   const searchParams = new URLSearchParams(window.location.search);
@@ -20,7 +19,7 @@ const JobDetails = () => {
     const postData = dot.object(Object.fromEntries(formData.entries()));
     FetchService.PostAsync("/api/application/", postData)
       .then(res => {
-        toast("Arizangiz muvoffaqiyatli qabul qilindi!", { type: "success" });
+        toast(i18n.Get("application.checkApplication"), { type: "success" });
         form.reset();
       })
       .catch(err => {
@@ -38,18 +37,18 @@ const JobDetails = () => {
   }
   return (
     <div className="job-details-wrapper">
-      <Block state={isLoading}/>
+      <Block state={isLoading} />
       <div className="header-back"></div>
       <div className="container">
         <div className="job-details-box">
           <h2 className="job-details-title">{jobData["name"]}</h2>
           <p className="job-details-desc">{jobData["description"]}</p>
           <div className='job-details-time'>
-            <span><b>Ish vaqti:</b></span>
+            <span><b>{i18n.Get("application.time")}</b></span>
             <p>{jobData["workTime"]}</p>
           </div>
           <div className='job-details-salary'>
-            <span><b>Maosh:</b></span>
+            <span><b>{i18n.Get("application.salary")}</b></span>
             <p>{jobData["salary"]}</p>
           </div>
         </div>
@@ -59,47 +58,49 @@ const JobDetails = () => {
             {/* <input type={"hidden"} name="createAddressDto" value={"parent"}></input> */}
             <div className="client-data-box">
               <div>
-                <label htmlFor="first-name">Ismingizni kiriting</label>
-                <input type="text" placeholder='Ismingiz' id='first-name' name='firstName' required />
+                <label htmlFor="first-name">{i18n.Get('application.name')}</label>
+                <input type="text" placeholder={i18n.Get('application.name')} id='first-name' name='firstName' required />
               </div>
               <div>
-                <label htmlFor="last-name">Familiyangizni kiriting</label>
-                <input type="text" placeholder='Familiyangiz' id='last-name' name='lastName' required />
+                <label htmlFor="last-name">{i18n.Get('application.lastName')}</label>
+                <input type="text" placeholder={i18n.Get('application.lastName')} id='last-name' name='lastName' required />
               </div>
               <div>
-                <label htmlFor="phone-num">Telefon raqamingizni kiriting</label>
+                <label htmlFor="phone-num">{i18n.Get('contact.tel')}</label>
                 <input type="tel" placeholder='+998939494411' id='phone-num' name='phoneNumber' required />
               </div>
               <div>
-                <label htmlFor="email-data">Elektron pochta manzilingizni kiriting</label>
+                <label htmlFor="email-data">{i18n.Get('contact.email')}</label>
                 <input type="email" placeholder='example@gmail.com' id='email-data' name='email' required />
               </div>
             </div>
             <div className="location-box">
               <div>
-                <label htmlFor="">Mamlakat</label>
-                <input type="text" placeholder='Mamlakat' name='createAddressDto.country' />
+                <label htmlFor="">{i18n.Get('application.country')}</label>
+                <input type="text" placeholder={i18n.Get('application.country')} name='createAddressDto.country' />
               </div>
               <div>
-                <label htmlFor="">Viloyat</label>
-                <input type="text" placeholder='Mamlakat' name='createAddressDto.region' />
+                <label htmlFor="">{i18n.Get('application.region')}</label>
+                <input type="text" placeholder={i18n.Get('application.region')} name='createAddressDto.region' />
               </div>
               <div>
-                <label htmlFor="">Tuman</label>
-                <input type="text" placeholder='Tuman' name='createAddressDto.district' />
+                <label htmlFor="">{i18n.Get('application.district')}</label>
+                <input type="text" placeholder={i18n.Get('application.district')} name='createAddressDto.district' />
               </div>
               <div>
-                <label htmlFor="">Ko'cha</label>
-                <input type="text" placeholder="Ko'cha" name='createAddressDto.street' />
+                <label htmlFor="">{i18n.Get('application.street')}</label>
+                <input type="text" placeholder={i18n.Get('application.street')} name='createAddressDto.street' />
               </div>
               <div>
-                <label htmlFor="">Postal kodi</label>
+                <label htmlFor="">{i18n.Get('application.code')}</label>
                 <input type="number" placeholder='30' name='createAddressDto.postalCode' />
               </div>
             </div>
-            <label htmlFor='applicationMessage'>Xabar:</label>
-            <textarea name='applicationMassage' id='applicationMessage'></textarea>
-            <button type='submit' className='job-submit-btn'>Yuborish</button>
+            <div className="app-message-box">
+              <label htmlFor='applicationMessage'>{i18n.Get('application.message')}</label>
+              <textarea placeholder={i18n.Get('application.message')} rows={"5"} name='applicationMassage' id='applicationMessage'></textarea>
+            </div>
+            <button type='submit' className='job-submit-btn'>{i18n.Get('contact.send')}</button>
           </form>
         </div>
       </div>

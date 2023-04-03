@@ -84,13 +84,15 @@ export const FetchService = {
     async ExecuteRequestAsync(path, data, method, config) {
         this.SetConfig(config);
         try {
-            console.log("Executing...")
+            if (process.env.NODE_ENV === "development")
+                console.log("Executing...")
             const response = await this.axios.request({
                 url: (localStorage.getItem("lang") ?? "uz") + path,
                 data: data,
                 method: method
             });
-            console.log("Executed", response);
+            if (process.env.NODE_ENV === "development")
+                console.log("Executed", response);
             if (response.status < 200 || response.status > 299)
                 throw response;
             return response;
